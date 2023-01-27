@@ -4,10 +4,16 @@
   --subtitle-color: #b4b4b4;
   --accent-color: #f3c653;
   --primary-text-color: #5f5f5f;
-  --secondary-text-color: #7A7A7A;
+  --secondary-text-color: #7a7a7a;
   --accent-text-color: #c79002;
 
   --logo-font: 'Film P3';
-  --main-font:'Montserrat';
+  --main-font: 'Montserrat';
   --additional-font: 'Times New Roman';
+
+  --background-lighter: #fffdee;
+  --background-darker: #f0ecd6;
+  --footer-background: #0e0c07;
+  --transition-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
