@@ -111,9 +111,9 @@
 }
 
 @media (min-device-pixel-ratio: 2)  and (max-width: 1023px),
-  (-webkit-min-device-pixel-ratio: 2)  and (min-width: 1023px),
-  (min-resolution: 192dpi)  and (min-width: 1023x),
-  (min-resolution: 2dppx)  and (min-width: 1023px) {
+  (-webkit-min-device-pixel-ratio: 2)  and (max-width: 1023px),
+  (min-resolution: 192dpi)  and (max-width: 1023px),
+  (min-resolution: 2dppx)  and (max-width: 1023px) {
       .hero {
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), 
   rgba(0, 0, 0, 0.65)),
