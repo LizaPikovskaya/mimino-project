@@ -1,0 +1,130 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+background: var(--footer-background);
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+.footer .container {
+  display: flex;
+}
+.logo-link-footer {
+  margin-left: 44px;
+  align-self: center;
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .logo-link-footer {
+    margin-left: 107px;
+    font-size: 64px;
+    line-height: calc(69 / 64);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .logo-link-footer {
+    margin-left: 131px;
+  }
+}
+.pages-list {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .pages-list {
+    margin-bottom: 0px;
+    margin-right: 132px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .pages-list {
+    margin-right: 199px;
+  }
+}
+.pages-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.pages-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.footer-wrapper-right-side {
+  margin-left: auto;
+  padding-right: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .footer-wrapper-right-side {
+    display: flex;
+    padding-right: 75px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer-wrapper-right-side {
+    padding-right: 101px;
+  }
+}
+
+.social-list-footer {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+@media screen and (min-width: 1024px) {
+  .social-list-footer {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: 12px;
+  }
+}
+.social-item-footer {
+  line-height: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .social-item-footer {
+    min-width: 144px;
+  }
+}
+.social-link {
+//   display: inline-block;
+  // width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    border: 0.5px solid var(--accent-color);
+    border-radius: 2px;
+  }
+}
+.social-link span {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .social-link span {
+    font-family: var(--main-font);
+    display: inline;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+}
