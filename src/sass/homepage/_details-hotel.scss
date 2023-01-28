@@ -53,17 +53,17 @@
     text-align: end;
 }
 .text-hotel{
-  width: 243px;
+  max-width: 243px;
   margin-left: 32px;
 }
 @media screen and (min-width:1024px) {
   .text-hotel{
-    width: 549px;
-    margin-left: 197px;
+    max-width: 549px;
+    margin-right: 15px;
   }
 }
   .details-paragraph-hotel{
-    width: 243px;
+    max-width: 243px;
 height: 62px;
 font-weight: 600;
 font-size: 12px;
@@ -74,7 +74,7 @@ margin-bottom: 48px;
 }
 @media screen and (min-width:1024px) {
  .details-paragraph-hotel{
-    width: 549px;
+    max-width: 549px;
 margin-bottom: 40px;
   height: 44px;
   font-size: 16px;
