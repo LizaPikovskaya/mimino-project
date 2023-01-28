@@ -1,22 +1,17 @@
-.list {
+/*.list {
     list-style: none;
 }
 
 
 /*______Section-one______*/
 
-.hotel-one {
+/*.hotel-three {
     padding-top: 32px;
     padding-bottom: 32px;
     margin: 0;
 }
 
-@media screen and (min-width: 1024px) {
-    .hotel-one {
-        padding-top: 72px;
-        padding-bottom: 40px;
-    }
-}
+
 
 .hotel-first-text {
     font-family: 'Times New Roman';
@@ -65,6 +60,13 @@
     margin-bottom: 12px;
 }
 
+@media screen and (min-width: 1024px) {
+    .hotel-scnd-title {
+        font-size: 30px;
+        line-height: 34px;
+    }
+}
+
 .hotel-scnd-text {
     font-family: 'Montserrat';
     font-weight: 600;
@@ -74,6 +76,14 @@
     max-width: 258px;
     margin: 0;
     margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+    .hotel-scnd-text {
+        max-width: 439px;
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
 
 .hotel-img {
@@ -88,8 +98,9 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .assa {
-        display: flex;
+    .hotel-photo {
+        width: 400px;
+            height: 524px;
     }
 }
 
@@ -101,6 +112,20 @@
 
 .hotel-photo-item {
     margin: 0;
+}
+
+.hotel-button{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .hotel-button {
+        display: flex;
+        align-items: flex-end;
+        margin-top: 89px;
+    }
 }
 
 .hotel-btn {
@@ -119,6 +144,14 @@
     display: block;
 }
 
+@media screen and (min-width: 1024px) {
+    .hotel-btn {
+        margin: 0;
+        margin-bottom: 16px;
+    }
+}
+
 .hotel-btn:last-child {
     margin-bottom: 0;
-}
+    margin-top: 0;
+}*/
