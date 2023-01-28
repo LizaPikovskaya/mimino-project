@@ -1,19 +1,14 @@
 header {
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    
+    left: 50%;
+    transform: translate(-50%,0);
+    min-width: 320px;
 }
 
+.header__container {
 
-.header__wrapper {
     display: flex;
-    width: 414px;
-    height: 50px;
-    padding: 0 15px;
     align-items: flex-end;
 }
 
@@ -37,7 +32,6 @@ header {
 
 .header__nav-icon {
     display: flex;
-    align-items: flex-start;
 }
 
 .header__tel-text {
@@ -64,6 +58,18 @@ header {
 .header__nav-items {
     margin-right: 20px;
 }
+@media screen and (max-width:413px){
+    .header__nav-items {
+            margin-right: auto;
+        }
+    .header__logo {
+        letter-spacing: 0.15em;
+    }
+    .header__nav-link {
+        margin-right: 0;
+    }
+}
 .header__nav-items:nth-child(2n) {
     margin-right: 0;
 }
+
