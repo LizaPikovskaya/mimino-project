@@ -1,75 +1,93 @@
 header {
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translate(-50%,0);
-    min-width: 320px;
+ right: 0;
+ width: 100%;
+ padding-top: 16px;
+
 }
 
 .header__container {
 
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header__logo {
-    margin-top: 16px;
     display: block;
     font-family: "Film P3";
     font-size: 36px;
     font-weight: 700;
-    line-height: calc(36/38.72);
+    line-height: calc(39 / 36);
     letter-spacing: 0.3em;
     text-decoration: none;
     color: var(--logo-theme-dark);
-    margin-right: auto;
+    // margin-right: auto;
 }
 
 .header__nav-list {
     display: flex;
-  
+    align-items: center;
+   gap: 20px;
+
 }
 
-.header__nav-icon {
-    display: flex;
-}
+// .header__nav-icon {
+//     display: flex;
+// }
 
 .header__tel-text {
     display: none;
 }
 
+
 .header__nav-link {
     font-family: "Montserrat";
     font-size: 16px;
     font-weight: 500;
-    line-height: calc(19.5/16);
+    line-height: calc(20 / 16);
     letter-spacing: 0.02em;
     color: var(--accent-color);
-    margin-right: 6px;
-    align-self: baseline;
+    // margin-right: 6px;
+    align-self: center;
 }
+@media screen and (max-width: 360px) {
+    .header__logo {
+        font-size: 32px;}
+    .header__nav-link {
+        font-size: 14px;
+}
+.header__nav-list {
+  
+   gap: 10px;
 
+}}
 
 .header__nav-items {
     display: flex;
-    align-items: center;
+    align-self: baseline;
+    // align-items: center;
+    gap: 6px;
 }
-
-.header__nav-items {
-    margin-right: 20px;
+.header__nav-tel {
+    line-height: 0;
 }
-@media screen and (max-width:413px){
-    .header__nav-items {
-            margin-right: auto;
-        }
-    .header__logo {
-        letter-spacing: 0.15em;
-    }
-    .header__nav-link {
-        margin-right: 0;
-    }
-}
-.header__nav-items:nth-child(2n) {
-    margin-right: 0;
-}
+// .header__nav-items {
+//     margin-right: 20px;
+// }
+// @media screen and (max-width:413px){
+//     .header__nav-items {
+//             margin-right: auto;
+//         }
+//     .header__logo {
+//         letter-spacing: 0.15em;
+//     }
+//     .header__nav-link {
+//         margin-right: 0;
+//     }
+// }
+// .header__nav-items:nth-child(2n) {
+//     margin-right: 0;
+// }
 
