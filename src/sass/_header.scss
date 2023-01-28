@@ -1,14 +1,23 @@
 header {
     position: absolute;
     top: 0;
- right: 0;
- width: 100%;
- padding-top: 16px;
+    right: 0;
+    width: 100%;
+    padding-top: 16px;
 
+
+// Gradient for apartments page
+
+
+    // height: 115px;
+    // background-image: linear-gradient( 
+    //     to bottom,
+    //     rgba(0, 0, 0, 1),
+    //     rgba(0, 0, 0, 0.55),
+    //     rgba(0, 0, 0, 0));
 }
 
 .header__container {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,24 +32,13 @@ header {
     letter-spacing: 0.3em;
     text-decoration: none;
     color: var(--logo-theme-dark);
-    // margin-right: auto;
 }
 
 .header__nav-list {
     display: flex;
     align-items: center;
-   gap: 20px;
-
+    gap: 20px;
 }
-
-// .header__nav-icon {
-//     display: flex;
-// }
-
-.header__tel-text {
-    display: none;
-}
-
 
 .header__nav-link {
     font-family: "Montserrat";
@@ -49,45 +47,76 @@ header {
     line-height: calc(20 / 16);
     letter-spacing: 0.02em;
     color: var(--accent-color);
-    // margin-right: 6px;
     align-self: center;
 }
+
 @media screen and (max-width: 360px) {
     .header__logo {
-        font-size: 32px;}
+        font-size: 32px;
+    }
     .header__nav-link {
         font-size: 14px;
+    }
+    .header__nav-list {
+        gap: 10px;
+    }
 }
-.header__nav-list {
-  
-   gap: 10px;
-
-}}
 
 .header__nav-items {
     display: flex;
-    align-self: baseline;
-    // align-items: center;
     gap: 6px;
 }
+
 .header__nav-tel {
+    display: flex;
     line-height: 0;
+    color: var(--logo-theme-dark);
 }
-// .header__nav-items {
-//     margin-right: 20px;
-// }
-// @media screen and (max-width:413px){
-//     .header__nav-items {
-//             margin-right: auto;
-//         }
-//     .header__logo {
-//         letter-spacing: 0.15em;
-//     }
-//     .header__nav-link {
-//         margin-right: 0;
-//     }
-// }
-// .header__nav-items:nth-child(2n) {
-//     margin-right: 0;
-// }
+
+.header__tel-number {
+    display: none;
+    align-self: center;
+}
+
+@media screen and (min-width:1024px) {
+    .header__tel-number {
+        display: block;
+    }
+    .header__nav-tel {
+        padding: 8px ;
+        border: 1px solid 
+
+//  Border transperancy made by using RGBA !!!
+
+        //var(--accent-color)
+        rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: calc(14/17);
+        letter-spacing: 0.02em;
+    }
+    .header__nav-items {
+        gap: 32px;
+    }
+    .header__nav-list {
+        gap: 72px;
+    }
+    .header__nav-link {
+        font-size: 20;
+        line-height: calc(24/20);
+    }
+}
+
+.header__social-list {
+    display: none;
+}
+
+@media screen and (min-width:1280px) {
+    .header__social-list {
+        display: flex;
+        gap: 20px;
+    }
+}
 
