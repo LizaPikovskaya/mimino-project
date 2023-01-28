@@ -1,10 +1,10 @@
-<div class="modal hidden" data-modal="1">
+<div class="modal hidden" data-modal="2">
     <!--   Svg иконка для закрытия окна  -->
     <svg class="modal__cross js-modal-close">
         <use href="./images/svg/sprite.svg#icon-close"></use>
     </svg>
 
-    <h2 class="modal__title">ЗАБРОНЮВАТИ НОМЕР</h2>
+    <h2 class="modal__title">ЗАБРОНЮВАТИ СТОЛИК</h2>
     <form class="modal-form">
         <div class="modal-group">
             <input class="modal-input" type="text" name="name" id="name" pattern="[A-Za-zА-Яа-яЁё-9]+" placeholder="Ваше ім’я" autocomplete="name">
@@ -16,14 +16,15 @@
         </div>
         <div class="modal-select">
             <select class="modal-input select" name="room_type" id="room_type">
-                <option value="2pl" selected>Двомісний люкс</option>
-                <option value="3p">Трьохмісний</option>
-                <option value="2p">Двомісний</option>               
+                <option value="1">1</option>
+                <option value="2"selected>2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>                
             </select>
             <svg class="select_arrow" width="24" height="24">
                 <use class="arrow" href="./images/svg/sprite.svg#icon-select-check"></use>
             </svg>
-            <label class="modal-label" for="room_type">Категорія номеру</label>
+            <label class="modal-label" for="room_type">Столик на яку кількість осіб?</label>
         </div>
         <div class="modal-select">
             <select class="modal-input select" name="checkin_data" id="checkin_data">
@@ -34,20 +35,9 @@
             <svg class="select_arrow" width="24" height="24">
                 <use class="arrow" href="./images/svg/sprite.svg#icon-select-check"></use>
             </svg>
-            <label class="modal-label" for="checkin_data">Дата заїзду</label>
-        </div>
-        <div class="modal-select">
-            <select class="modal-input select" name="checkout_data" id="checkout_data">
-                <option value="0" selected>Сьогодні</option>
-                <option value="1">Завтра</option>
-                <option value="2">Післязавтра</option>               
-            </select>
-            <svg class="select_arrow" width="24" height="24">
-                <use class="arrow" href="./images/svg/sprite.svg#icon-select-check"></use>
-            </svg>
-            <label class="modal-label" for="checkout_data">Дата виїзду</label>
+            <label class="modal-label" for="checkin_data">На яку дату бронювати?</label>
         </div>
         <button class="modal-button-submit" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
     </form>
- </div>
- <div class="overlay js-overlay-modal"></div>
+</div>
+<div class="overlay js-overlay-modal"></div>
