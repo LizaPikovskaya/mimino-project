@@ -10,9 +10,12 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.65);
-    z-index: 1;
+    z-index: 101;
     transition: opacity var(--transition-fast);
  }
+//  .modal.hidden {
+// display: none;
+//  }
  .modal {
    
     /* Скрываем окна  */
@@ -30,7 +33,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2; /* Должен быть выше чем у подложки*/
+    z-index: 102; /* Должен быть выше чем у подложки*/
     
     /*  Побочные стили   */
     padding: 60px 15px;
@@ -38,6 +41,7 @@
     background-color: var(--background-lighter);
     transition: opacity var(--transition-fast);
     overflow: auto;
+    // outline: 2px solid red;
  }
  /* Стили для активных классов подложки и окна */
 
@@ -74,6 +78,16 @@
 
 	margin-bottom: 20px;
 }
+.modal_text {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #808080;
+    margin-bottom: 20px;
+}
 .modal-input {
     padding: 17px 12px;
     margin-bottom: 8px;
@@ -89,7 +103,7 @@
     letter-spacing: 0.05em;
 
     color: #808080;
-    background: transparent;
+    background-color: transparent;
 
 }
 .modal-label {
@@ -109,6 +123,7 @@
    	margin-bottom: 20px;
    
 }
+
 .modal-input.select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -116,7 +131,10 @@
     z-index: 1;
   
   }
-  .select_arrow {
+  option {
+    background-color: var(--background-lighter);   
+  }
+   .select_arrow {
     position: absolute;
     top: 16px;
     right: 15px;
