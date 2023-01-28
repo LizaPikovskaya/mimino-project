@@ -1,0 +1,124 @@
+.list {
+    list-style: none;
+}
+
+
+/*______Section-one______*/
+
+.hotel-one {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .hotel-one {
+        padding-top: 72px;
+        padding-bottom: 40px;
+    }
+}
+
+.hotel-first-text {
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #B4B4B4;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1024px) {
+    .hotel-first-text {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 37px;
+    }
+}
+
+.hotel-first-title {
+    font-family: 'Film P3';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 43px;
+    letter-spacing: 0.3em;
+    color: #494848;
+    margin: 0;
+    margin-bottom: 32px;
+
+}
+
+@media screen and (min-width: 1024px) {
+    .hotel-first-title {
+        font-size: 64px;
+        line-height: 69px;
+    }
+}
+
+.hotel-scnd-title {
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.hotel-scnd-text {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #7A7A7A;
+    max-width: 258px;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.hotel-img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hotel-photo {
+    margin: 0;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+@media screen and (min-width: 1024px) {
+    .assa {
+        display: flex;
+    }
+}
+
+.hotel-photo-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.hotel-photo-item {
+    margin: 0;
+}
+
+.hotel-btn {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F3C653;
+    background: #000000;
+    border: 2px solid #FFFDEE;
+    border-radius: 25px;
+    width: 236px;
+    height: 48px;
+    margin: 20px auto 16px;
+    display: block;
+}
+
+.hotel-btn:last-child {
+    margin-bottom: 0;
+}
