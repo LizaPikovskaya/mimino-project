@@ -85,7 +85,7 @@ margin-bottom: 20px;
   }
 }
 .details-paragraph{
-    width: 259px;
+    max-width: 259px;
 height: 62px;
 font-weight: 600;
 font-size: 12px;
@@ -96,7 +96,7 @@ margin-bottom: 48px;
 }
 @media screen and (min-width:1024px) {
   .details-paragraph{
-     width: 549px;
+     max-width: 610px;
  margin-bottom: 40px;
    height: 44px;
    font-size: 16px;
