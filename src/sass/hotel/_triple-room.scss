@@ -1,0 +1,30 @@
+.hotel-photo-two {
+    margin: 0;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+.hotel-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hotel-scnd-text-two {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #7A7A7A;
+    max-width: 242px;
+    margin: 0;
+    margin-right: 45px;
+    margin-bottom: 32px;
+}
+
+.hotel-two {
+    background: #F0ECD6;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
