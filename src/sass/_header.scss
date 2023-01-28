@@ -1,0 +1,69 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.header__wrapper {
+    display: flex;
+    width: 414px;
+    height: 50px;
+    padding: 0 15px;
+    align-items: flex-end;
+}
+
+.header__logo {
+    margin-top: 16px;
+    display: block;
+    font-family: "Film P3";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: calc(36/38.72);
+    letter-spacing: 0.3em;
+    text-decoration: none;
+    color: var(--logo-theme-dark);
+    margin-right: auto;
+}
+
+.header__nav-list {
+    display: flex;
+  
+}
+
+.header__nav-icon {
+    display: flex;
+    align-items: flex-start;
+}
+
+.header__tel-text {
+    display: none;
+}
+
+.header__nav-link {
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: calc(19.5/16);
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    margin-right: 6px;
+    align-self: baseline;
+}
+
+
+.header__nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-items {
+    margin-right: 20px;
+}
+.header__nav-items:nth-child(2n) {
+    margin-right: 0;
+}
