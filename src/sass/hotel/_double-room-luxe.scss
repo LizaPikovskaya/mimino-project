@@ -95,6 +95,12 @@
     justify-content: flex-end;
 }
 
+@media screen and (min-width: 1024px) {
+    .hotel-img {
+        transform: translateY(-32px);
+    }
+}
+
 .hotel-photo {
     margin: 0;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
@@ -105,6 +111,8 @@
     .hotel-photo {
         width: 400px;
         height: 524px;
+        margin-left: 26px;
+
     }
 }
 
@@ -128,7 +136,7 @@
     .hotel-button {
         display: flex;
         align-items: flex-end;
-        margin-top: 89px;
+        margin-top: 57px;
         margin-bottom: 73px;
     }
 }
@@ -160,4 +168,16 @@
 .hotel-btn:last-child {
     margin-bottom: 0;
     margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .hotel-photo-text {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hotel-content {
+        margin: 0;
+    }
 }

@@ -7,7 +7,8 @@
 @media screen and (min-width: 1024px) {
     .hotel-photo-two {
         width: 400px;
-            height: 524px;
+        height: 524px;
+        
     }
 }
 
@@ -110,7 +111,7 @@
     .hotel-button-two {
         display: flex;
         align-items: flex-start;
-        margin-top: 89px;
+        margin-top: 57px;
         margin-bottom: 73px;
     }
 }
@@ -135,5 +136,20 @@
     .hotel-btn {
         margin: 0;
         margin-bottom: 16px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .hotel-photo-text-two {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hotel-img-two {
+        margin-right: 45px;
+        transform: translateY(-35px);
     }
 }
