@@ -1,0 +1,59 @@
+.details-hotel{
+    padding-top: 24px;
+    padding-bottom: 40px;
+    height: 735px;
+}
+// phone screen
+@media screen and  (max-width:1023px) {
+    .details-hotel{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/mobile/main-page/det_hotel_mob@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
+@media screen and (max-width: 1023px) and (min-device-pixel-ratio: 2),screen and (max-width: 1023px) and (min-resolution: 192dpi),screen and (max-width: 1023px) and (min-resolution: 2dppx) {
+    .details-hotel{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/mobile/main-page/det_hotel_mob@2x.jpg);
+    }
+  }
+//   tablet screen
+  @media screen and (min-width:1024px) {
+    .details-hotel{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/tab/main-page/det_hotel_tab@1x.jpg);
+    }
+  }
+  @media screen and (min-width:1024px) and (min-device-pixel-ratio: 2),screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx){
+    .details-hotel{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/tab/main-page/det_hotel_tab@2x.jpg);
+    }
+  }
+//   desktop screen
+  @media screen and (min-width:1280px) {
+    .details-hotel{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/desktop/main-page/det-hotel-desk@1.jpg);
+    }
+  }
+  @media screen and (min-width:1280px) and (min-device-pixel-ratio: 2),screen and (min-width:1280px) and (min-resolution: 192dpi),screen and (min-width:1280px) and (min-resolution: 2dppx){
+    .details-hotel{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/desktop/main-page/det-hotel-desk@2x.jpg);
+    }
+  }
+  .details-hotel>.details-tittle{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .details-hotel>.details-secondtittle{
+    margin-left: auto;
+    margin-right: 86px;
+}
+  .details-paragraph-hotel{
+    width: 259px;
+height: 62px;
+font-weight: 600;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+color: var(--subtitle-color);
+margin-bottom: 48px;
+margin-left: 32px;
+}
