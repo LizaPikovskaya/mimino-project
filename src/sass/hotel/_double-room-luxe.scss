@@ -97,7 +97,7 @@
 
 @media screen and (min-width: 1024px) {
     .hotel-img {
-        transform: translateY(-32px);
+        transform: translateY(-112px);
     }
 }
 
@@ -109,9 +109,14 @@
 
 @media screen and (min-width: 1024px) {
     .hotel-photo {
-        width: 400px;
-        height: 524px;
-        margin-left: 26px;
+        margin-right: 65px;
+
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hotel-photo {
+        margin-right: 95px;
 
     }
 }
@@ -138,7 +143,7 @@
     .hotel-button-list {
         display: flex;
         align-items: flex-end;
-        margin-top: 57px;
+        margin-top: 0;
         margin-bottom: 73px;
 
     }
@@ -158,6 +163,12 @@
     height: 48px;
     margin: 20px auto 16px;
     display: block;
+}
+
+.hotel-btn:hover{
+    color: #F3C653;
+    background: #FFFFFF;
+    border: 2px solid #F3C653;
 }
 
 .hotel-button-item{
@@ -186,6 +197,7 @@
 @media screen and (min-width: 1024px) {
     .hotel-photo-text {
         display: flex;
+        justify-content: space-between;
     }
 }
 
