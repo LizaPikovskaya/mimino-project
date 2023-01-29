@@ -163,10 +163,12 @@
     height: 48px;
     margin: 20px auto 16px;
     display: block;
+    transition: background-color var(--transition-slow),
+    border var(--transition-slow);
 }
 
-.hotel-btn:hover{
-    color: #F3C653;
+.hotel-btn:hover,
+.hotel-btn:focus {
     background: #FFFFFF;
     border: 2px solid #F3C653;
 }
