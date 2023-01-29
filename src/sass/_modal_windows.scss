@@ -1,8 +1,8 @@
 .overlay {
    
     /* Скрываем подложку  */
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
     
     position: fixed;
     top: 0;
@@ -13,14 +13,14 @@
     z-index: 101;
     transition: opacity var(--transition-fast);
  }
-//  .modal.hidden {
-//     display: none;
-//  }
+ .modal.hidden {
+    display: none;
+ }
  .modal {
    
     /* Скрываем окна  */
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
     
     
     /*  Установаем ширину окна  */
@@ -157,18 +157,31 @@
     z-index: 1;
   
   }
-  option {
-    background-color: var(--background-lighter);   
-  }
-   .select_arrow {
+  .modal-select::after {
+    content: "";
     position: absolute;
     top: 16px;
     right: 15px;
    
     width: 24px;
     height: 24px;
+    background-image: url(../images/svg/select-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     z-index: 0;
   }
+  option {
+    background-color: var(--background-lighter);   
+  }
+//    .select_arrow {
+//     position: absolute;
+//     top: 16px;
+//     right: 15px;
+   
+//     width: 24px;
+//     height: 24px;
+//     z-index: 0;
+//   }
   .modal-button-submit {
     height: 64px;
     width: 100%;
