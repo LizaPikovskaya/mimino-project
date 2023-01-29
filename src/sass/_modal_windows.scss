@@ -1,8 +1,8 @@
 .overlay {
    
     /* Скрываем подложку  */
-    // opacity: 0;
-    // visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
     
     position: fixed;
     top: 0;
@@ -13,14 +13,14 @@
     z-index: 101;
     transition: opacity var(--transition-fast);
  }
- .modal.hidden {
-    display: none;
- }
+//  .modal.hidden {
+//     display: none;
+//  }
  .modal {
    
     /* Скрываем окна  */
-    // opacity: 0;
-    // visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
     
     
     /*  Установаем ширину окна  */
