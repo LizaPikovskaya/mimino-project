@@ -2,6 +2,15 @@
     background: #FFFDEE;
     
     }
+    @media screen and (min-width: 1024px){
+        .img-hotel-room{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0;
+        
+        }
+    }
+    
     .text-restaurant{
     padding-top: 16px;
     font-family: 'Times New Roman';
@@ -71,13 +80,13 @@
         height: 80px;    
     }    
     }
-    .img-about-restuarant{
-    display: flex;  
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 0;
-    margin: 0;  
-    }
+    // .img-about-restuarant{
+    // display: flex;  
+    // flex-direction: column;
+    // align-items: flex-end;
+    // padding: 0;
+    // margin: 0;  
+    // }
     .photo-about-restaurant{
     margin-bottom: 30px;
     display: flex;
@@ -85,7 +94,15 @@
     }
 
 .img-hotel{
+
 margin-bottom: 32px   
+}
+@media screen and (min-width: 1024px){
+.img-hotel{
+    margin: 0px;
+    margin-right: 46px;
+transform: translateY(-32px);    
+}
 }
 
     .left-text{
@@ -101,18 +118,37 @@ margin-bottom: 32px
         width: 163px;
         height: 120px;    
     }
+    @media screen and (min-width: 1024px){
+    .left-text{   
+    width: 312px;
+    height: 122px;
+    font-size: 16px;
+line-height: 20px; 
+padding-right: 48px;   
+    }
+    } 
         
     .about-hotel{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
     } 
+    @media screen and (min-width: 1024px){
+    .about-hotel{
+    margin-top: 120px;    
+    }    
+    }
     .img-about-hotel{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-bottom: 32px;
         margin: 0px;
+    }
+    @media screen and (min-width: 1024px){
+    .img-about-hotel{
+        justify-content: flex-end;    
+    }    
     }  
     .photo-about-hotel{
       
