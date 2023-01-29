@@ -14,6 +14,7 @@ background: var(--footer-background);
 .footer .container {
   display: flex;
 }
+
 .logo-link-footer {
   margin-left: 44px;
   align-self: center;
@@ -26,6 +27,10 @@ background: var(--footer-background);
 
   transition: var(--transition-slow);
 }
+@media screen and (max-width: 360px) {
+  .logo-link-footer {
+    margin-left: 0px;
+}}
 .logo-link-footer:hover,
 .logo-link-footer:hover {
 color: var(--accent-text-color)
@@ -74,17 +79,17 @@ color: var(--accent-text-color)
 }
 .footer-wrapper-right-side {
   margin-left: auto;
-  padding-right: 15px;
+  margin-right: 15px;
 }
 @media screen and (min-width: 1024px) {
   .footer-wrapper-right-side {
     display: flex;
-    padding-right: 75px;
+    margin-right: 75px;
   }
 }
 @media screen and (min-width: 1280px) {
   .footer-wrapper-right-side {
-    padding-right: 101px;
+    margin-right: 101px;
   }
 }
 
