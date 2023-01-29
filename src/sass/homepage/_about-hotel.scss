@@ -153,3 +153,8 @@ padding-right: 48px;
     .photo-about-hotel{
       
     } 
+    @media screen and (min-width: 1024px){
+        .photo-hotel{
+            box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);    
+        }    
+        }  
