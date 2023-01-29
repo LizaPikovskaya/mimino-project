@@ -131,7 +131,7 @@
         left: 8px;
         width: 24px;
         height: 24px;
-        fill: var(--accent-text-color);
+        fill: var(--accent-text-color) ;
     }
 
     .contacts-section-address-div{
@@ -173,7 +173,7 @@
     }
     .contact-section-map-iframe{
         border: 1px solid #BABABA;
-        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
         border-radius: 2px;
     }
     
