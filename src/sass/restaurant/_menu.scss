@@ -3,6 +3,26 @@
     padding-bottom: 32px;
     background-color: var(--background-lighter);
 }
+@media screen and (min-width: 1024px) {
+    .restaurant-menu-section {
+        padding-top: 58px;
+        padding-bottom: 40px;
+    }
+    .restaurant-menu-formation {
+        display: flex;
+        gap: 88px;
+        margin-bottom: 41px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .restaurant-menu-section {
+        padding-bottom: 60px;
+    }
+    .restaurant-menu-formation {
+        gap: 140px;
+        margin-bottom: 32px;
+        }
+}
 
 .font-title {
     font-family: 'Times New Roman';
@@ -14,8 +34,13 @@
     font-size: 28px;
     line-height: 1.156;
     /*border: 1px solid #000000;*/
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 32px;
+}
+
+@media screen and (max-width: 1023.98px) {
+    .restaurant-menu-title {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
 }
 
 @media screen and (min-width: 351px) {
@@ -24,15 +49,38 @@
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .restaurant-menu-title {
+        margin-bottom: 40px;
+    }
+}
+
 .restaurant-menu-name {
     font-size: 20px;
     line-height: 1.15;
     margin-bottom: 16px;
 }
+@media screen and (min-width: 1024px) {
+    .restaurant-menu-name {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .restaurant-menu-name {
+        font-size: 24px;
+        line-height: 1.167;
+    }
+}
 
 .restaurant-menu-position {
     font-weight: 500;
     font-size: 14px;
+}
+@media screen and (min-width: 1280px) {
+    .restaurant-menu-position {
+        font-size: 16px;
+        line-height: 1.25;
+    }
 }
 
 .restaurant-menu-composition {
@@ -48,6 +96,14 @@
     margin-bottom: 16px;
     border-collapse: separate;
     /*border-spacing: 32px 8px;*/
+}
+@media screen and (min-width: 1024px) {
+    .restaurant-menu-table {
+        margin-bottom: 0px;
+    }
+    .restaurant-menu-table:nth-last-child(n+2) {
+        margin-bottom: 20px;
+    }
 }
 
 .restaurant-menu-cell:nth-child(1) {
@@ -66,6 +122,12 @@
 
 .item-margin {
     margin-top: 8px;
+}
+
+@media screen and (min-width: 1280px) {
+    .item-margin {
+        margin-top: 12px;
+        }
 }
 
 .restaurant-button-style {
@@ -90,4 +152,9 @@
 .restaurant-button-style:active {
     background-color: var(--logo-theme-dark);
     border: 2px solid var(--accent-color);
+}
+@media screen and (min-width: 1024px) {
+    .restaurant-button-style {
+        margin-right: 0;
+    }
 }
