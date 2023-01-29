@@ -5,18 +5,20 @@
     </svg>
 
     <h2 class="modal__title">ЦІНИ НА НОМЕР</h2>
-    <form class="modal-form">
+    <form class="modal-form">      
         <div class="modal-group">
             <p class="modal_text">Двомісний люкс</p>
             <label class="modal-label">Категорія номеру</label>
         </div>
-        <div class="modal-group">
-            <input class="modal-input" type="text" name="nights" id="nights" pattern="^[ 0-9]+$" placeholder="1">
-            <label class="modal-label" for="nights">Кількість ночей</label>
-        </div>
-        <div class="modal-group">
-            <input class="modal-input" type="text" name="price" id="price" pattern="^[ 0-9]+$" placeholder="1000">
-            <label class="modal-label" for="price">грн</label>
+        <div class="common-group">
+            <div class="modal-group">
+                <input class="modal-input" type="text" name="nights" id="nights" pattern="^[ 0-9]+$" placeholder="1">
+                <label class="modal-label" for="nights">Кількість ночей</label>
+            </div>
+            <div class="modal-group">
+                <input class="modal-input" type="text" name="price" id="price" pattern="^[ 0-9]+$" placeholder="1000">
+                <label class="modal-label" for="price">грн</label>
+            </div>
         </div>
         <button class="modal-button-submit" type="submit">ЗАБРОНЮВАТИ НОМЕР</button>
     </form>
