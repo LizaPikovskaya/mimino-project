@@ -105,11 +105,9 @@ margin-bottom: 24px;
         display: flex;
         justify-content: flex-end;
     margin-bottom: 32px;
-}    
-    @media screen and (min-width: 1024px){
+} 
+@media screen and (min-width: 1024px){
     .photo-restaurant{
-        width: 400px;
-        height: 524px;
         transform: translateY(-32px);    
     }    
     }
@@ -153,3 +151,4 @@ margin-bottom: 24px;
         letter-spacing: 0.02em;    
     }    
     }
+
