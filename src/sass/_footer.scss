@@ -14,6 +14,7 @@ background: var(--footer-background);
 .footer .container {
   display: flex;
 }
+
 .logo-link-footer {
   margin-left: 44px;
   align-self: center;
@@ -23,8 +24,17 @@ background: var(--footer-background);
   line-height: calc(43 / 40);
   letter-spacing: 0.3em;
   color: var(--accent-color);
-}
 
+  transition: var(--transition-slow);
+}
+@media screen and (max-width: 360px) {
+  .logo-link-footer {
+    margin-left: 0px;
+}}
+.logo-link-footer:hover,
+.logo-link-footer:hover {
+color: var(--accent-text-color)
+}
 @media screen and (min-width: 1024px) {
   .logo-link-footer {
     margin-left: 107px;
@@ -57,23 +67,29 @@ background: var(--footer-background);
   line-height: calc(24 / 20);
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  transition: var(  --transition-slow);
 }
+.pages-link:hover,
+.pages-link:focus {
+  color: var(--accent-text-color);
+}
+
 .pages-item:not(:last-child) {
   margin-bottom: 16px;
 }
 .footer-wrapper-right-side {
   margin-left: auto;
-  padding-right: 15px;
+  margin-right: 15px;
 }
 @media screen and (min-width: 1024px) {
   .footer-wrapper-right-side {
     display: flex;
-    padding-right: 75px;
+    margin-right: 75px;
   }
 }
 @media screen and (min-width: 1280px) {
   .footer-wrapper-right-side {
-    padding-right: 101px;
+    margin-right: 101px;
   }
 }
 
@@ -98,10 +114,19 @@ background: var(--footer-background);
     min-width: 144px;
   }
 }
+.social-icon {
+  fill: var(--accent-color);
+  transition: var(--transition-slow);
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon{
+  fill: var(--accent-text-color);
+}
 .social-link {
 //   display: inline-block;
   // width: 100%;
 }
+
 
 @media screen and (min-width: 1024px) {
   .social-link {
@@ -111,8 +136,14 @@ background: var(--footer-background);
     padding: 8px 12px;
     border: 0.5px solid var(--accent-color);
     border-radius: 2px;
+    transition: var(--transition-slow);
   }
+  .social-link:hover,
+.social-link:focus  {
+  border:0.5px solid var(--accent-text-color);
 }
+}
+
 .social-link span {
   display: none;
 }
@@ -127,5 +158,10 @@ background: var(--footer-background);
 
     letter-spacing: 0.02em;
     color: var(--accent-color);
+    transition: var(--transition-slow);
   }
+}
+.social-link:hover span,
+.social-link:focus span {
+color: var(--accent-text-color);
 }

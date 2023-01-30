@@ -10,9 +10,12 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.65);
-    z-index: 1;
+    z-index: 101;
     transition: opacity var(--transition-fast);
  }
+//  .modal.hidden {
+//     display: none;
+//  }
  .modal {
    
     /* Скрываем окна  */
@@ -30,7 +33,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2; /* Должен быть выше чем у подложки*/
+    z-index: 102; /* Должен быть выше чем у подложки*/
     
     /*  Побочные стили   */
     padding: 60px 15px;
@@ -38,6 +41,13 @@
     background-color: var(--background-lighter);
     transition: opacity var(--transition-fast);
     overflow: auto;
+    // outline: 2px solid red;
+ }
+ @media screen and (min-width: 1024px) {
+    .modal {
+    max-width: 712px;
+    padding: 60px;
+    }
  }
  /* Стили для активных классов подложки и окна */
 
@@ -74,6 +84,17 @@
 
 	margin-bottom: 20px;
 }
+
+.modal_text {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #808080;
+    margin-bottom: 20px;
+}
 .modal-input {
     padding: 17px 12px;
     margin-bottom: 8px;
@@ -89,9 +110,9 @@
     letter-spacing: 0.05em;
 
     color: #808080;
-    background: transparent;
-
+    background-color: transparent;
 }
+
 .modal-label {
     margin-left: 8px;
     font-weight: 500;
@@ -109,6 +130,26 @@
    	margin-bottom: 20px;
    
 }
+@media screen and (min-width: 1024px) {
+    .room-group {
+        display: flex;
+        // justify-content: space-between;
+        justify-content: flex-end;       
+    }
+    
+    .modal-group, .modal-select {
+        width: 288px;
+        margin-right: 16px;
+        
+    }
+    .modal-group:last-child, .modal-select:last-child {
+        margin-right: 0;
+    }
+    .common-group {
+        display: flex;
+    }
+}
+
 .modal-input.select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -116,15 +157,31 @@
     z-index: 1;
   
   }
-  .select_arrow {
+  .modal-select::after {
+    content: "";
     position: absolute;
     top: 16px;
     right: 15px;
    
     width: 24px;
     height: 24px;
+    background-image: url(../images/svg/select-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     z-index: 0;
   }
+  option {
+    background-color: var(--background-lighter);   
+  }
+//    .select_arrow {
+//     position: absolute;
+//     top: 16px;
+//     right: 15px;
+   
+//     width: 24px;
+//     height: 24px;
+//     z-index: 0;
+//   }
   .modal-button-submit {
     height: 64px;
     width: 100%;
