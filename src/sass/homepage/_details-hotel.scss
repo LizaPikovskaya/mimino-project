@@ -14,6 +14,8 @@
 @media screen and (max-width: 1023px) and (min-device-pixel-ratio: 2),screen and (max-width: 1023px) and (min-resolution: 192dpi),screen and (max-width: 1023px) and (min-resolution: 2dppx) {
     .details-hotel{
       background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/mobile/main-page/det_hotel_mob@2x.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 //   tablet screen
@@ -21,23 +23,31 @@
     .details-hotel{
         background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/tab/main-page/det_hotel_tab@1x.jpg);
         height: 620px;
-    }
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
   }
   @media screen and (min-width:1024px) and (min-device-pixel-ratio: 2),screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx){
     .details-hotel{
         background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/tab/main-page/det_hotel_tab@2x.jpg);
-    }
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
   }
 //   desktop screen
   @media screen and (min-width:1280px) {
     .details-hotel{
         background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/desktop/main-page/det-hotel-desk@1.jpg);
-    }
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
   }
   @media screen and (min-width:1280px) and (min-device-pixel-ratio: 2),screen and (min-width:1280px) and (min-resolution: 192dpi),screen and (min-width:1280px) and (min-resolution: 2dppx){
     .details-hotel{
         background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/desktop/main-page/det-hotel-desk@2x.jpg);
-    }
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
   }
   .details-hotel>.details-tittle{
     margin-left: auto;
