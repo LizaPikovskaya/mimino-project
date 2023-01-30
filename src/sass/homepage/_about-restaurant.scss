@@ -132,20 +132,15 @@ margin-bottom: 24px;
     }
     @media screen and (min-width: 1024px){
         .img-about-restuarant{
-            transform: translateY(-60px);
-        }    
+            transform: translateY(-60px);}    
         }    
     .photo-about-restaurant{
     margin-bottom: 30px;
     display: flex;
-    justify-content: flex-end;
-    }
+    justify-content: flex-end;}
     
-    @media screen and (min-width: 1024px){
-    .photo-about-restaurant{
    
-    }    
-    }
+  
 
     @media screen and (min-width: 1024px){
         .photo{

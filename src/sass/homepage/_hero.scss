@@ -1,0 +1,122 @@
+/* --------------------HERO----------------------- */
+.hero {
+  padding: 180px 0 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Montserrat';
+}
+
+.hero-title {
+  margin-bottom: 24px;
+  text-align: center;
+  font-family: 'Film P3';
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.3em;
+  color: var(--logo-theme-dark);
+  transform: translateX(16px);
+}
+
+.hero-description {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;  
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--logo-theme-dark);
+}
+
+.hero-text {
+  margin-bottom: 113px;
+  font-family: 'Times New Roman';
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 0.05em;
+  color: var(--logo-theme-dark);
+}
+
+.hero-adress-text {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: var(--logo-theme-dark);
+}
+
+.hero-adress-wrapper {  
+  position: absolute;
+  padding: 8px 8px 8px 34px;
+  
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+}
+
+.icon-adress {
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-list-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 58px;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 24px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #FFFFFF;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.hero-social-list {
+  display: flex;
+  gap: 20px;
+}
+
+.social-link {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+  .hero-adress-wrapper {
+    top: 65px;
+    right: 15px;
+  }
+
+  .hero {
+    padding: 180px 0 20px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), 
+  rgba(0, 0, 0, 0.65)),
+    url(/src/images/mobile/main-page/main_hero_mob@1x.jpg);}
+}
+
+@media (min-device-pixel-ratio: 2)  and (max-width: 1023px),
+  (-webkit-min-device-pixel-ratio: 2)  and (max-width: 1023px),
+  (min-resolution: 192dpi)  and (max-width: 1023px),
+  (min-resolution: 2dppx)  and (max-width: 1023px) {
+      .hero {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), 
+  rgba(0, 0, 0, 0.65)),
+      url(/src/images/mobile/main-page/main_hero_mob@2x.jpg);
+    }
+}

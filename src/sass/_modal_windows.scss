@@ -1,0 +1,203 @@
+.overlay {
+   
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 101;
+    transition: opacity var(--transition-fast);
+ }
+//  .modal.hidden {
+//     display: none;
+//  }
+ .modal {
+   
+    /* Скрываем окна  */
+    opacity: 0;
+    visibility: hidden;
+    
+    
+    /*  Установаем ширину окна  */
+    width: 100%;
+    max-width: 414px;
+    max-height: 98%;
+    
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 102; /* Должен быть выше чем у подложки*/
+    
+    /*  Побочные стили   */
+    padding: 60px 15px;
+    border-radius: 2px;
+    background-color: var(--background-lighter);
+    transition: opacity var(--transition-fast);
+    overflow: auto;
+    // outline: 2px solid red;
+ }
+ @media screen and (min-width: 1024px) {
+    .modal {
+    max-width: 712px;
+    padding: 60px;
+    }
+ }
+ /* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active{
+   opacity: 1;
+   visibility: visible;
+}
+/* Стили для кнопки закрытия */
+.modal__cross {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    stroke: var(--footer-background);
+    cursor: pointer;
+    
+ }
+// Стили для заголовка окна
+ .modal__title {
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.05em;
+    margin-bottom: 40px;
+ }
+//  Стили для полей ввода
+.modal-group {
+    display: flex;
+	flex-direction: column;
+
+	margin-bottom: 20px;
+}
+
+.modal_text {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #808080;
+    margin-bottom: 20px;
+}
+.modal-input {
+    padding: 17px 12px;
+    margin-bottom: 8px;
+
+    border: 1px solid var(--accent-text-color);
+    border-radius: 2px;
+
+
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    letter-spacing: 0.05em;
+
+    color: #808080;
+    background-color: transparent;
+}
+
+.modal-label {
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    
+    color: var(--accent-text-color);
+}
+.modal-select {
+    width: 100%;
+	position: relative;
+    display: flex;
+	flex-direction: column;
+   	margin-bottom: 20px;
+   
+}
+@media screen and (min-width: 1024px) {
+    .room-group {
+        display: flex;
+        // justify-content: space-between;
+        justify-content: flex-end;       
+    }
+    
+    .modal-group, .modal-select {
+        width: 288px;
+        margin-right: 16px;
+        
+    }
+    .modal-group:last-child, .modal-select:last-child {
+        margin-right: 0;
+    }
+    .common-group {
+        display: flex;
+    }
+}
+
+.modal-input.select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    z-index: 1;
+  
+  }
+  .modal-select::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 15px;
+   
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/svg/select-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+  }
+  option {
+    background-color: var(--background-lighter);   
+  }
+//    .select_arrow {
+//     position: absolute;
+//     top: 16px;
+//     right: 15px;
+   
+//     width: 24px;
+//     height: 24px;
+//     z-index: 0;
+//   }
+  .modal-button-submit {
+    height: 64px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    background-color: var(--footer-background);
+    border: 1px solid var(--accent-text-color);
+    border-radius: 2px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    color: var(--logo-theme-dark); 
+    transition: background-color var(--transition-fast), color var(--transition-fast);   
+}
+.modal-button-submit:hover, .modal-button-submit:focus {
+    background-color: var(--accent-color);
+    color: var(--footer-background);
+}
