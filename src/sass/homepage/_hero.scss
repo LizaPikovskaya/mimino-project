@@ -7,6 +7,7 @@
   font-family: 'Montserrat';
 }
 
+
 .hero-title {
   margin-bottom: 24px;
   text-align: center;
@@ -18,7 +19,12 @@
   color: var(--logo-theme-dark);
   transform: translateX(16px);
 }
-
+@media screen and (max-width: 360px) {
+  .hero-title {
+    margin-right: calc(96*0.3);
+    letter-spacing: 0.2em;
+  }
+}
 .hero-description {
   font-weight: 600;
   font-size: 16px;
@@ -51,6 +57,7 @@
 
 .hero-adress-wrapper {  
   position: absolute;
+  top: 0;
   padding: 8px 8px 8px 34px;
   
   border: 1px solid rgba(243, 198, 83, 0.7);
@@ -93,8 +100,14 @@
   gap: 20px;
 }
 
-.social-link {
+.hero-social-link-item {
   cursor: pointer;
+  fill: var(--accent-text-color);
+}
+@media screen and (min-width:1280px) {
+  .hero-social-link-item {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -119,4 +132,44 @@
   rgba(0, 0, 0, 0.65)),
       url(/src/images/mobile/main-page/main_hero_mob@2x.jpg);
     }
+}
+
+// Addition to Dima's code
+
+@media screen and (min-width:1024px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)),
+      url(/src/images/tab/main-page/main_hero_tab@1.jpg);
+  }
+}
+
+@media screen and(min-device-pixel-ratio: 2) and (min-width: 1024px),
+screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px),
+screen and (min-resolution: 192dpi) and (min-width: 1024px),
+screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)),
+      url(/src/images/tab/main-page/main_hero_tabtab@2x.jpg);
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)),
+      url(/src/images/desktop/main-page/main_hero_desk@1x\ 12.53.13.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px),
+screen and (min-resolution: 192dpi) and (min-width: 1280px),
+screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)),
+      url(/src/images/desktop/main-page/main_hero_desk@2x\ 12.53.13.jpg);
+  }
 }
