@@ -1,0 +1,188 @@
+.section-about-restaurant-two {
+    background: #FFFDEE;
+
+}
+
+.text-restaurant-two {
+    padding-top: 16px;
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #B4B4B4;
+    margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1024px) {
+    .text-restaurant-two {
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 37px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .text-restaurant-two {
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 37px;
+    }
+}
+
+.about-restaurant-two {
+    padding: 0;
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+    .about-restaurant-two {
+        margin: 0;
+        display: flex;
+    }
+}
+
+.text-two {}
+
+@media screen and (min-width: 1024px) {
+    .text-two {
+        margin-top: 120px;
+    }
+}
+
+.title-about-restaurant-two {
+    font-family: 'Film P3';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 43px;
+    color: #494848;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 12px;
+
+    width: 127px;
+    height: 43px;
+    letter-spacing: 0.3em;
+}
+
+@media screen and (min-width: 1024px) {
+    .title-about-restaurant-two {
+        font-family: 'Film P3';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 69px;
+        width: 202px;
+        height: 69px;
+        letter-spacing: 0.3em;
+
+        color: #494848;
+        margin-bottom: 24px;
+    }
+}
+
+.text-about-restaurant-two {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    margin-bottom: 28px;
+
+    color: #7A7A7A;
+
+    width: 258px;
+    height: 76px;
+}
+
+@media screen and (min-width: 1024px) {
+    .text-about-restaurant-two {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+
+        color: #7A7A7A;
+        width: 439px;
+        height: 80px;
+        margin: 0px;
+    }
+}
+
+.photo-restaurant-two {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+    .photo-restaurant-two {
+        margin: 0;
+        transform: translateY(-32px);
+    }
+}
+
+.img-about-restuarant-two {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .img-about-restuarant-two {
+        transform: translateY(-60px);
+    }
+}
+
+.photo-about-restaurant-two {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .photo-about-restaurant-two {}
+}
+
+@media screen and (min-width: 1024px) {
+    .photo-two {
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    }
+}
+
+
+.right-text-two {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+
+    color: #C79002;
+    padding-left: 20px;
+    width: 163px;
+    height: 120px;
+}
+
+@media screen and (min-width: 1024px) {
+    .right-text-two {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        width: 312px;
+        height: 122px;
+        padding-left: 48px;
+    }
+}
