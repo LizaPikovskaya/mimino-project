@@ -64,9 +64,15 @@
     top: 16px;
     right: 16px;
     stroke: var(--footer-background);
+    stroke-width: 2px;
     cursor: pointer;
+    transition: stroke var(--transition-fast),  stroke-width var(--transition-fast);
     
  }
+ .modal__cross:hover, .modal__cross:focus {
+    stroke: var(--accent-text-color);
+    stroke-width: 5px;
+    }
 // Стили для заголовка окна
  .modal__title {
     text-align: center;
