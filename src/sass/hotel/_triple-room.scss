@@ -4,17 +4,6 @@
     border-radius: 2px;
 }
 
-@media screen and (min-width: 1024px) {
-    .hotel-photo-two {
-        margin-left: 65px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .hotel-photo-two {
-        margin-left: 95px;
-    }
-}
 
 .hotel-first-text {
     font-family: 'Times New Roman';
@@ -123,7 +112,16 @@
     .hotel-button-list-two {
         display: flex;
         align-items: flex-start;
-        margin-top: 0;
+        margin-top: 89px;
+        margin-bottom: 73px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hotel-button-list-two {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 120px;
         margin-bottom: 73px;
     }
 }
@@ -170,7 +168,14 @@
 
 @media screen and (min-width: 1024px) {
     .hotel-img-two {
-        margin-right: 63px;
-        transform: translateY(-112px);
+        margin-left: 65px;
+        margin-top: -94px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hotel-img-two {
+        margin-left: 95px;
+        margin-top: -112px;
     }
 }
