@@ -37,7 +37,8 @@
     @media screen and (min-width: 1024px){
     .about-restaurant{
         margin: 0;
-        display: flex; 
+        display: flex;
+        justify-content: space-between; 
     }    
     }
 
@@ -119,9 +120,17 @@ margin-bottom: 24px;
 @media screen and (min-width: 1024px){
     .photo-restaurant{
         margin: 0;
+        margin-right: 65px;
         transform: translateY(-32px);    
     }    
     }
+    @media screen and (min-width: 1280px){
+        .photo-restaurant{
+         margin-right: 95px;
+         transform: translateY(-33px);
+            
+        }    
+        }
 
     .img-about-restuarant{
     display: flex;  
@@ -132,7 +141,7 @@ margin-bottom: 24px;
     }
     @media screen and (min-width: 1024px){
         .img-about-restuarant{
-            transform: translateY(-60px);
+        
         }    
         }    
     .photo-about-restaurant{
@@ -143,15 +152,21 @@ margin-bottom: 24px;
     
     @media screen and (min-width: 1024px){
     .photo-about-restaurant{
-   
+   margin: 0px;
     }    
     }
 
     @media screen and (min-width: 1024px){
         .photo{
+        margin-top: -40px;
        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
         }    
         }
+        @media screen and (min-width: 1280px){
+            .photo{
+            margin-top: -65px;
+            }    
+            }
       
     
     .right-text{
