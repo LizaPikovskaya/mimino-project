@@ -97,6 +97,16 @@
     gap: 8px;
 }
 
+@media screen and (min-width: 1024px) {
+    .room-social-network-list {
+        display: flex;
+        gap: 21px;
+        margin-left: 372px;
+        margin-bottom: 38px;
+        margin-top: 42px;
+    }
+  }
+
 button.room-prices-button {
     box-sizing: border-box;
     width: 232px;
@@ -117,10 +127,25 @@ button.room-prices-button {
 
 }
 
+@media screen and (min-width: 1024px) {
+    button.room-prices-button {
+        position: absolute;
+        top: 608px;
+        left: 745px;
+        
+    }
+  }
+
 .room-location-container {
     display: flex;
     justify-content: end;
 }
+
+@media screen and (min-width: 1024px) {
+    .room-location-container {
+        justify-content: flex-start;
+    }
+  }
 .room-location {
 
     box-sizing: border-box;
@@ -138,6 +163,12 @@ button.room-prices-button {
     border-radius: 2px;
     
 }
+
+@media screen and (min-width: 1024px) {
+    .room-location {
+        top: 640px;
+    }
+  }
 
 .address__map {
 
