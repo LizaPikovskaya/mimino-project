@@ -1,0 +1,79 @@
+.section-room-convenience {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: var(--background-lighter);
+}
+
+.amenities-title {
+    margin-bottom: 16px;
+    font-family: var(--additional-font);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+}
+
+.amenities-text {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--secondary-text-color);
+}
+
+.about-room {
+    margin-top: 32px; 
+    margin-bottom: 32px;
+}
+
+.about-room-title {
+    margin-bottom: 16px;
+    font-family: var(--additional-font);
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+    
+.amenities-text:last-child {
+    margin-bottom: 16px;
+}
+
+.room-booking-button {
+    display: flex;
+    box-sizing: border-box;
+    
+    max-width: 384px;
+    min-height: 64px;
+    margin-bottom: 20px;
+    
+    background: #000000;
+   
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    margin: 0 auto;
+    padding: 20px 42px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: var(--logo-theme-dark);
+
+}
+
+.room-back {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--accent-text-color);
+    
+}
+
+.room-back-icon {
+    fill: var(--accent-text-color);
+    margin-left: 12px;
+}

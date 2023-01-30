@@ -1,9 +1,51 @@
 .room-hero {
-    background-color: rgb(90, 60, 20);
+    background-image: url(../images/mobile/hotel/hotel_page_mob@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto; 
 }
+ 
+@media screen and  (max-width:1023px) {
+    .room-hero{
+    background-image: url(../images/mobile/hotel/hotel_page_mob@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+}
+@media screen and (max-width: 1023px) and (min-device-pixel-ratio: 2),screen and (max-width: 1023px) and (min-resolution: 192dpi),screen and (max-width: 1023px) and (min-resolution: 2dppx) {
+    .room-hero{
+      background-image: url(../images/mobile/hotel/hotel_page_mob@2x.jpg);
+    }
+  }
+//   tablet screen
+  @media screen and (min-width:1024px) {
+    .room-hero{
+        background-image: url(../images/tab/hotel/hotel_page_tab@1x.jpg);
+    }
+  }
+  @media screen and (min-width:1024px) and (min-device-pixel-ratio: 2),screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx){
+    .room-hero{
+        background-image: url(../images/tab/hotel/hotel_page_tab@2x.jpg);
+    }
+  }
+//   desktop screen
+  @media screen and (min-width:1280px) {
+    .room-hero{
+        background-image: url(../images/desktop/hotel/hotel_page_desk@1x.jpg);
+    }
+  }
+  @media screen and (min-width:1280px) and (min-device-pixel-ratio: 2),screen and (min-width:1280px) and (min-resolution: 192dpi),screen and (min-width:1280px) and (min-resolution: 2dppx){
+    .room-hero{
+        background-image: url(../images/desktop/hotel/hotel_page-desk@2x.jpg);
+    }
+  }
+
+
+
 .room-title {
-    width: 325px;
-    margin-top: 483px;
+    max-width: 325px;
+    padding-top: 483px;
 
     font-family: 'Times New Roman';
     font-style: normal;
@@ -14,8 +56,17 @@
     color:var(--logo-theme-dark);
 }
 
+@media screen and (min-width: 1024px) {
+    .room-title {
+        min-width: 510px;
+        font-size: 36px;
+        line-height: 41px;
+      
+    }
+  }
+
 .room-text {
-    width: 325px;
+    max-width: 325px;
     margin-top: 14px;
    
     font-family: 'Montserrat';
@@ -29,13 +80,89 @@
 
 }
 
+.room-list-button {
+    display: flex;
+
+}
+.button-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
 .room-social-network-list {
     margin-top: 16px;
+    margin-bottom: 14px;
     gap: 8px;
 }
 
-.room-button-prices {
-    border: 2px solid var(--logo-theme-dark);
+button.room-prices-button {
+    box-sizing: border-box;
+    width: 232px;
+    height: 48px;
+    background: rgba(0, 0, 0, 0.4);
+
+    border: 2px solid #FFFFFF;
     border-radius: 25px;
-    gap: 8px;
+
+    position: relative;
+    left: 5px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+
 }
+
+.room-location-container {
+    display: flex;
+    justify-content: end;
+}
+.room-location {
+
+    box-sizing: border-box;
+    position: absolute;
+    width: 210px;
+    height: 47px;
+    top: 64px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 8px 3px 9px 6px;
+
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    
+}
+
+.address__map {
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.01em;
+
+    color: #E5E5E5;;
+}
+
+.room-logo-location {
+    margin-right: 8px;
+}
+
+.room-gradient {
+
+    content:"";
+    position: absolute;
+    width: 100vw;
+    height: 143px;
+    left: 0px;
+    top: -1px;
+    
+    background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 54.17%, rgba(0, 0, 0, 0) 100%);
+ }
+
+ 
