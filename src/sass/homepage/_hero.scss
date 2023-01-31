@@ -2,7 +2,6 @@
 
 /* --------------------HERO----------------------- */
 .hero {
-  position: relative;
 
   background-position: center;
   background-size: cover;
@@ -10,62 +9,120 @@
   font-family: 'Montserrat';
 }
 
-.hero-title-wrapper {
-  width: 100%;
-  text-align: center;
+.hero .container {
+  position: relative;
 }
+@media screen and (min-width: 1024px) {
+  .hero {
+    padding-top: 88px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding-top: 64px;
+  }
+}
+
+
 
 .hero-title {
-  display: inline-flex;
+  text-align: center;
+margin-bottom: 24px;
+margin-left: calc(96 * 0.3);
   font-family: 'Film P3';
   font-weight: 700;
-  line-height: 1.1;
+  font-size: 96px;
+  line-height: 1.07;
   letter-spacing: 0.3em;
   color: var(--logo-theme-dark);
-  text-decoration: none;
-  cursor: pointer;
+
 }
+@media screen and (min-width: 1024px) {
+ .hero-title {
+margin-bottom: 16px;
+font-size: 128px;
+}
+}
+@media screen and (min-width: 1024px) {
+  .hero-title {
+ margin-bottom: 32px;
+ }
+ }
 
 .hero-description {
+  margin-bottom: 40px;
   font-weight: 600;
+  font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.02em;  
   text-align: center;
   color: var(--logo-theme-dark);
 }
 
+@media screen and (min-width: 1024px) {
+  .hero-description {
+    margin-bottom: 56px;
+    font-size: 20px;
+ }
+ }
+ @media screen and (min-width: 1280px) {
+  .hero-description {
+    margin-bottom: 64px;
+ }
+ }
+
 .hero-text {
+  margin-bottom: 113px;
   font-family: 'Times New Roman';
+  font-size: 32px;
   text-align: center;
   font-weight: 700;
-  line-height: 1.15;
+  line-height: 1.14;
   letter-spacing: 0.05em;
   color: var(--logo-theme-dark);
 }
+@media screen and (min-width: 1024px) {
+  .hero-text {
+    margin-bottom: 56px;
+    font-size: 36px;
+ }
+ }
+ @media screen and (min-width: 1280px) {
+  .hero-text {
+    margin-bottom: 64px;
+ }
+ }
 
-.hero-adress-text {
-  font-family: 'Montserrat';
+.hero-adress-link {
+  position: absolute;
+    top: -120px;
+    right: 15px;
+
+  display: inline-flex;  
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 6px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.25;
   letter-spacing: 0.01em;
   text-align: start;
-  color: var(--logo-theme-dark);
-}
-
-.hero-adress-wrapper {
-  position: relative;
-  display: inline-flex;  
-  padding: 8px 8px 8px 34px;
-  
+color: #E5E5E5;  
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
 }
+@media screen and (min-width: 1024px) {
+  .hero-adress-link {
+position: static;
+font-size: 16px;
+padding: 8px 11px;
+gap: 10px;
+
+ }
+ }
+
 
 .icon-adress {
-  position: absolute;
-  left: 6px;
-  top: 50%;
-  transform: translateY(-50%);
 
   fill: var(--accent-color);
 }
@@ -120,21 +177,6 @@
   rgba(0, 0, 0, 0.65)),
     url(/src/images/mobile/main-page/main_hero_mob@1x.jpg);}
 
-  .hero-title {
-    width: 300px;
-    font-size: 96px;
-    margin-bottom: 24px;
-  }
-
-  .hero-description {
-    font-size: 16px;
-    margin-bottom: 40px;
-  }
-
-  .hero-text {
-    font-size: 32px;
-    margin-bottom: 113px;
-  }
 
   .hero-list-btn {
     flex-direction: column;
@@ -143,11 +185,7 @@
     gap: 15px;
   }  
   
-  .hero-adress-wrapper {
-    position: absolute;
-    top: 65px;
-    right: 15px;
-  }
+
 
   .hero-adress-text {
     font-size: 12px;
@@ -173,21 +211,6 @@
         url(/src/images/tab/main-page/main_hero_tab@1.jpg);
   }
 
-  .hero-title {
-    width: 400px;
-    font-size: 128px;
-    margin-bottom: 16px;
-  }
-
-  .hero-description {
-    font-size: 20px;
-    margin-bottom: 56px;
-  }
-
-  .hero-text {
-    font-size: 36px;
-    margin-bottom: 137px;
-  }
 
   .hero-adress-text {
     font-size: 16px;
@@ -222,13 +245,6 @@
       url(/src/images/desktop/main-page/main_hero_desk@1x\ 12.53.13.jpg);
   }
   
-  .hero-title {
-    margin-bottom: 32px;
-  }
-
-  .hero-description {
-    margin-bottom: 64px;
-  }
 
   .hero-social-list {
     display: none;
@@ -246,10 +262,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
   .hero-title {
-    width: 260px;
-    font-size: 82px;
+    font-size: 80px;
   }
 }
 
