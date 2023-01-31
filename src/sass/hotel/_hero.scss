@@ -241,10 +241,11 @@ margin-bottom: 242px;   }
     }
   }
   
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 385px) {
     .hero-title {
-      font-size: 80px;
-    }
+        margin-left: calc(80 * 0.3);
+        font-size: 80px;
+      }
   }
   
   

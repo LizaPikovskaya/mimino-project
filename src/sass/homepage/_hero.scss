@@ -261,8 +261,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
   }
 }
 
-@media screen and (max-width: 380px) {
+
+@media screen and (max-width: 385px) {
   .hero-title {
+    margin-left: calc(80 * 0.3);
     font-size: 80px;
   }
 }
