@@ -6,9 +6,12 @@
     }
     .slider_container {
         padding: 0;
+
+
     }
     .swiper__container {
         position: relative;
+
         
     }
 
@@ -58,14 +61,8 @@
         cursor: pointer;
         transition: var(--transition-slow);
     }
-    .s-button-prev:hover,
-        .s-button-prev:focus {
-        transform: scaleY(1.3);
-    }
-    .s-button-next:hover,
-        .s-button-next:focus {
-        transform: scaleY(1.3);
-    }
+
+
 
     .swiper__gradient {height: 115px;
         width: 100%;
@@ -78,3 +75,256 @@
         rgba(0, 0, 0, 0.55),
         rgba(0, 0, 0, 0));
     }
+// ______HERO______
+// .hero__container {
+//     z-index: 2;
+//     position: absolute;
+//     top: 0;
+   
+//     justify-content: center;
+// }
+
+ .room-title {
+     font-family: 'Times New Roman';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 28px;
+     line-height: 32px;
+     letter-spacing: 0.05em;
+     color: var(--logo-theme-dark);
+ }
+
+// @media screen and (min-width: 1024px) {
+//     .room-title {
+//         min-width: 510px;
+//         font-size: 36px;
+//         line-height: 41px;
+
+//     }
+// }
+
+ .room-text {
+     max-width: 325px;
+     margin-top: 14px;
+
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 12px;
+     line-height: 15px;
+     letter-spacing: 0.02em;
+
+     color: var(--logo-theme-dark);
+
+ }
+
+// .room-list-button {
+//     display: flex;
+
+// }
+
+// .button-container {
+//     justify-content: center;
+//     align-items: center;
+//     display: flex;
+//     width: 100%;
+// }
+
+ .room-social-network-list {
+     margin-right: 70px;
+     gap: 8px;
+ }
+ @media screen and (max-width:360px) {
+    .room-social-network-list {
+        margin-right: auto;
+    }
+    .room-title {
+     font-size: 24px;
+     line-height: calc(26/24);
+     letter-spacing: 0.05em;
+    }
+    .room-text{
+        margin-top: 5px;
+    }
+    .socials_and_prices {
+        margin-top: 5px;
+    }
+    .info__wrapper {
+        bottom: 5px;
+    }
+}   
+
+// @media screen and (min-width: 1024px) {
+//     .room-social-network-list {
+//         display: flex;
+//         gap: 21px;
+//         margin-left: 372px;
+//         margin-bottom: 38px;
+//         margin-top: 42px;
+//     }
+// }
+
+ button.room-prices-button {
+     box-sizing: border-box;
+     width: 232px;
+     height: 48px;
+     background: rgba(0, 0, 0, 0.4);
+
+     border: 2px solid #FFFFFF;
+     border-radius: 25px;
+
+     position: relative;
+     left: 5px;
+
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 20px;
+     letter-spacing: 0.02em;
+     color: var(--accent-color);
+
+ }
+
+// @media screen and (min-width: 1024px) {
+//     button.room-prices-button {
+//         position: absolute;
+//         top: 608px;
+//         left: 745px;
+
+//     }
+// }
+
+// .room-location-container {
+//     display: flex;
+//     justify-content: end;
+// }
+
+// @media screen and (min-width: 1024px) {
+//     .room-location-container {
+//         justify-content: flex-start;
+//     }
+// }
+
+ .room-location {
+
+     box-sizing: border-box;
+   
+     width: 210px;
+     height: 47px;
+
+
+     display: flex;
+     align-items: center;
+
+     padding: 8px 3px 9px 6px;
+
+     border: 1px solid rgba(243, 198, 83, 0.7);
+     border-radius: 2px;
+
+ }
+
+// @media screen and (min-width: 1024px) {
+//     .room-location {
+//         top: 640px;
+//     }
+// }
+
+ .address__map {
+
+     font-style: normal;
+     font-weight: 400;
+     line-height: 15px;
+     letter-spacing: 0.01em;
+
+     color: #E5E5E5;
+     ;
+ }
+
+// .room-logo-location {
+//     margin-right: 8px;
+// }
+
+.info__wrapper {
+    z-index: 2;
+    position: absolute;
+    bottom: 16;
+    left: 0;
+    right: 0;
+}
+.socials_and_prices {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width:360px) {
+    .socials_and_prices {
+        margin-top: 10px;
+    }
+    button.room-prices-button {
+      transform: translateX(-5px);
+    }
+}  
+.hero__slider__adress {
+    z-index: 2;
+    position: absolute;
+    top: 64;
+    right: 15;
+}
+
+// ----1024----
+
+@media screen and (min-width:1024px) {
+    .room-title {
+            font-size: 36px;
+            line-height: calc(41.4/36);
+            letter-spacing: 0.05em;
+        }
+    .room-text {
+        font-size: 1 6px;
+        line-height: calc(19.5/16);
+        letter-spacing: 0.02em;
+    }
+    .room-social-network-list {
+        display: flex;
+        gap: 21px;
+        align-items: center;
+        margin-right: 261px;
+    }
+    .socials_and_prices {
+        height: 104px;
+        margin-left: 325px;
+    }
+    .button-container {
+        align-self: baseline;
+    }
+    .hero__slider__adress {
+        top: 630px;
+        right: 767px;
+    }
+}
+
+// ----1280----
+
+@media screen and (min-width:1280px) {
+    
+    .room-social-network-list {
+        display: none;
+    }
+    .hero__slider__adress {
+        display: none;
+    }
+    .socials_and_prices {
+        height: auto;
+    }
+    .button-container {
+        align-self: center;
+        transform: translateY(30%);
+    }
+    .info__wrapper {
+        display: flex;
+        justify-content: space-between;
+            
+    }
+    .appartment__info {
+      margin-bottom: 32px;
+    }
+}
