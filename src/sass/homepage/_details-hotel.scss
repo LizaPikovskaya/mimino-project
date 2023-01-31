@@ -102,3 +102,19 @@ margin-bottom: 40px;
     margin-right: 47px;
   }
 }
+.tablet-box-hotel{
+  position: relative;
+}
+.swiper-button-next, .swiper-button-prev{
+ top: 65% !important;
+ background-repeat: no-repeat !important;
+ width: 30px !important;
+}
+.swiper-button-next{
+  right: 60px !important;
+  background-image: url("/src/images/svg/arrow-right-white.svg");
+}
+.swiper-button-prev{
+  left: 0 !important;
+  background-image: url("/src/images/svg/arrow-left-white.svg");
+}
