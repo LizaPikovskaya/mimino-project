@@ -6,6 +6,7 @@
         .img-hotel-room{
         display: flex;
         flex-direction: row-reverse;
+        justify-content: space-between;
         margin: 0;
         
         }
@@ -80,13 +81,7 @@
         height: 80px;    
     }    
     }
-    // .img-about-restuarant{
-    // display: flex;  
-    // flex-direction: column;
-    // align-items: flex-end;
-    // padding: 0;
-    // margin: 0;  
-    // }
+    
     .photo-about-restaurant{
     margin-bottom: 30px;
     display: flex;
@@ -99,11 +94,17 @@ margin-bottom: 32px
 }
 @media screen and (min-width: 1024px){
 .img-hotel{
-    margin: 0px;
-    margin-right: 46px;
+    margin: 0;
+    margin-left: 65px;
 transform: translateY(-32px);    
 }
 }
+@media screen and (min-width: 1280px){
+    .img-hotel{
+        margin-left: 95px;
+    transform: translateY(-33px);    
+    }
+    }
 
     .left-text{
         font-family: 'Montserrat';
@@ -147,14 +148,24 @@ padding-right: 48px;
     }
     @media screen and (min-width: 1024px){
     .img-about-hotel{
-        justify-content: flex-end;
-        transform: translateY(-60px);}    
+        justify-content: flex-end;      
+    }    
     }  
     .photo-about-hotel{
-      
+    margin: 0;  
+    }
+    @media screen and (min-width: 1024px){
+    .photo-about-hotel{
+    margin-top: -45px;    
+    }    
     } 
     @media screen and (min-width: 1024px){
+        .photo-about-hotel{
+        margin-top: -65px;    
+        }    
+        } 
+    @media screen and (min-width: 1024px){
         .photo-hotel{
-            box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);}    
-        }  
-        
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);    
+        }    
+        }
