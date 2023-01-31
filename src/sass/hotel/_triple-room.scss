@@ -4,13 +4,6 @@
     border-radius: 2px;
 }
 
-@media screen and (min-width: 1024px) {
-    .hotel-photo-two {
-        width: 400px;
-        height: 524px;
-        
-    }
-}
 
 .hotel-first-text {
     font-family: 'Times New Roman';
@@ -101,17 +94,34 @@
     padding-bottom: 32px;
 }
 
-.hotel-button-two {
+@media screen and (min-width: 1024px) {
+    .hotel-two {
+        padding-top: 72px;
+        padding-bottom: 40px;
+    }
+}
+
+.hotel-button-list-two {
     display: flex;
     flex-direction: column;
     margin: 0;
+    margin-top: 20px;
 }
 
 @media screen and (min-width: 1024px) {
-    .hotel-button-two {
+    .hotel-button-list-two {
         display: flex;
         align-items: flex-start;
-        margin-top: 57px;
+        margin-top: 89px;
+        margin-bottom: 73px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hotel-button-list-two {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 120px;
         margin-bottom: 73px;
     }
 }
@@ -132,11 +142,19 @@
     display: block;
 }
 
+.hotel-button-item-two{
+    margin-bottom: 16px;
+}
+
 @media screen and (min-width: 1024px) {
-    .hotel-btn {
+    .hotel-button-item-two {
         margin: 0;
         margin-bottom: 16px;
     }
+}
+
+.hotel-button-item-two:last-child{
+    margin-bottom: 0;
 }
 
 
@@ -144,12 +162,20 @@
     .hotel-photo-text-two {
         display: flex;
         flex-direction: row-reverse;
+        justify-content: space-between;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .hotel-img-two {
-        margin-right: 45px;
-        transform: translateY(-35px);
+        margin-left: 65px;
+        margin-top: -94px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hotel-img-two {
+        margin-left: 95px;
+        margin-top: -112px;
     }
 }

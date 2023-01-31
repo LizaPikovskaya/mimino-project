@@ -5,6 +5,8 @@ header {
     right: 0;
     width: 100%;
     padding-top: 16px;
+}
+   
 
 
 // Gradient for apartments page
@@ -16,7 +18,7 @@ header {
     //     rgba(0, 0, 0, 1),
     //     rgba(0, 0, 0, 0.55),
     //     rgba(0, 0, 0, 0));
-}
+
 
 .header__container {
     display: flex;
@@ -33,7 +35,15 @@ header {
     letter-spacing: 0.3em;
     text-decoration: none;
     color: var(--logo-theme-dark);
+    transition: var(--transition-slow)
 }
+.header__logo:hover {
+    transform: scale(1.2);
+}
+.header__logo:focus {
+    transform: scale(1.2);
+}
+
 
 .header__nav-list {
     display: flex;
@@ -49,7 +59,13 @@ header {
     letter-spacing: 0.02em;
     color: var(--accent-color);
     align-self: center;
+    transition: var(--transition-slow)
 }
+.header__tel-icon {
+    fill: var(--accent-color);
+    transition: var(--transition-slow)
+}
+
 
 @media screen and (max-width: 360px) {
     .header__logo {
@@ -72,11 +88,13 @@ header {
     display: flex;
     line-height: 0;
     color: var(--logo-theme-dark);
+    transition: var(--transition-slow);
 }
 
 .header__tel-number {
     display: none;
     align-self: center;
+    transition: var(--transition-slow);
 }
 
 @media screen and (min-width:1024px) {
@@ -123,4 +141,29 @@ header {
 
 .header__social-link {
     fill: var(--accent-color);
+    transition: var(--transition-slow);
+}
+.header__social-link:hover {
+    fill: var(--accent-text-color);
+}
+.header__social-link:focus {                
+    fill: var(--accent-text-color);
+}
+.header__nav-link:hover {
+    color: var(--accent-text-color)
+}
+.header__nav-link:focus {
+    color: var(--accent-text-color);
+}
+.header__nav-tel:hover .header__tel-icon {
+    fill: var(--accent-text-color) ;
+} 
+.header__nav-tel:focus .header__tel-icon {
+    fill: var(--accent-text-color);
+}
+.header__nav-tel:hover .header__tel-number{
+   color: var(--accent-text-color);
+}
+.header__nav-tel:focus .header__tel-number {
+    color: var(--accent-text-color);
 }

@@ -11,7 +11,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.65);
     z-index: 101;
-    transition: opacity var(--transition-fast);
+    transition: opacity var(--transition-slow), visibility var(--transition-slow);
  }
 //  .modal.hidden {
 //     display: none;
@@ -32,14 +32,14 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.2);
     z-index: 102; /* Должен быть выше чем у подложки*/
     
     /*  Побочные стили   */
     padding: 60px 15px;
     border-radius: 2px;
     background-color: var(--background-lighter);
-    transition: opacity var(--transition-fast);
+    transition: var(--transition-slow);
     overflow: auto;
     // outline: 2px solid red;
  }
@@ -51,7 +51,12 @@
  }
  /* Стили для активных классов подложки и окна */
 
-.modal.active,
+
+ .modal.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
 .overlay.active{
    opacity: 1;
    visibility: visible;
@@ -64,9 +69,15 @@
     top: 16px;
     right: 16px;
     stroke: var(--footer-background);
+    stroke-width: 2px;
     cursor: pointer;
+    transition: stroke var(--transition-fast),  stroke-width var(--transition-fast);
     
  }
+ .modal__cross:hover, .modal__cross:focus {
+    stroke: var(--accent-text-color);
+    stroke-width: 5px;
+    }
 // Стили для заголовка окна
  .modal__title {
     text-align: center;
@@ -157,18 +168,31 @@
     z-index: 1;
   
   }
-  option {
-    background-color: var(--background-lighter);   
-  }
-   .select_arrow {
+  .modal-select::after {
+    content: "";
     position: absolute;
     top: 16px;
     right: 15px;
    
     width: 24px;
     height: 24px;
+    background-image: url(../images/svg/select-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     z-index: 0;
   }
+  option {
+    background-color: var(--background-lighter);   
+  }
+//    .select_arrow {
+//     position: absolute;
+//     top: 16px;
+//     right: 15px;
+   
+//     width: 24px;
+//     height: 24px;
+//     z-index: 0;
+//   }
   .modal-button-submit {
     height: 64px;
     width: 100%;

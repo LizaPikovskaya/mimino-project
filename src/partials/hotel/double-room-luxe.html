@@ -10,22 +10,26 @@
             mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             </div>
         <div class="hotel-img">
-            <img class="hotel-photo"
-                srcset="./images/mobile/Hotel/room_mob@2x.jpg 1x, ./images/mobile/Hotel/room_mob@2x.jpg 2x"
-                src="./images/mobile/Hotel/room_mob@2x.jpg" alt="room">
+            <picture>
+                <source
+                    srcset="./images/desktop/main-page/about_hotel_yellow_pillow_desk@1x.jpg 1x , ./images/desktop/main-page/about_hotel_yellow_pillow_desk@2x.jpg 2x"
+                    width="460px" height="574px" media="(min-width:1280px)">
+                <source srcset="./images/tab/main-page/about_hotel_yellow_pillow_tab@1x.jpg 1x , ./images/tab/main-page/about_hotel_yellow_pillow_tab@2x.jpg 2x"
+                    width="400px" height="524px" media="(min-width:1024px)">
+                <img class="hotel-photo" src="./images/mobile/Hotel/room_mob.jpg" alt="hotel" srcset="./images/mobile/Hotel/room_mob.jpg 1x , ./images/mobile/Hotel/room_mob.jpg 2x"
+                    width="244px" height="322px">
+            </picture>
         </div>
         </div>
-        <ul class="hotel-photo-list">
-            <li class="hotel-photo-item list">
-
+        <ul class="hotel-button-list">
+            <li class="hotel-button-item list">
+                <a class="link" href="./hotel-room.html">
+                <button class="hotel-btn" type="button">Детальніше</button>
+                </a>
             </li>
-            <li class="hotel-photo-item list">
-
+            <li class="hotel-button-item list">
+                <button class="hotel-btn js-open-modal" data-modal="3" type="button">Переглянути ціни</button>
             </li>
         </ul>
-        <div class="hotel-button">
-        <button class="hotel-btn" type="button">Детальніше</button>
-        <button class="hotel-btn" type="button">Переглянути ціни</button>
-        </div>
     </div>
 </section>
