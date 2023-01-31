@@ -11,7 +11,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.65);
     z-index: 101;
-    transition: opacity var(--transition-slow), visibility var(--transition-slow);
+    transition: opacity var(--transition-fast);
  }
 //  .modal.hidden {
 //     display: none;
@@ -32,14 +32,14 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.2);
+    transform: translate(-50%, -50%);
     z-index: 102; /* Должен быть выше чем у подложки*/
     
     /*  Побочные стили   */
     padding: 60px 15px;
     border-radius: 2px;
     background-color: var(--background-lighter);
-    transition: var(--transition-slow);
+    transition: opacity var(--transition-fast);
     overflow: auto;
     // outline: 2px solid red;
  }
@@ -52,15 +52,12 @@
  /* Стили для активных классов подложки и окна */
 
 
+ .overlay.active,
  .modal.active {
     opacity: 1;
     visibility: visible;
-    transform: translate(-50%, -50%) scale(1);
 }
-.overlay.active{
-   opacity: 1;
-   visibility: visible;
-}
+
 /* Стили для кнопки закрытия */
 .modal__cross {
     width: 18px;
