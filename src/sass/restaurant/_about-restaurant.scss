@@ -151,7 +151,6 @@
 @media screen and (min-width: 1024px) {
     .photo-two {
         margin-top: -45px;
-        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
     }
 }
 
@@ -182,4 +181,9 @@
         height: 122px;
         padding-left: 48px;
     }
+}
+
+.photo-rest{
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;     
 }

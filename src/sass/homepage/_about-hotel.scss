@@ -1,7 +1,19 @@
-.about-restaurant{
+.section-about-hotel{
     background: #FFFDEE;
-    
     }
+
+    @media screen and (min-width: 1024px){
+        .section-about-hotel{
+            padding-bottom: 260px; 
+        }    
+        }
+        @media screen and (min-width: 1280px){
+            .section-about-hotel{
+            padding-bottom: 225px;     
+            }    
+            }
+
+
     @media screen and (min-width: 1024px){
         .img-hotel-room{
         display: flex;
@@ -11,6 +23,10 @@
         
         }
     }
+    .section-about-hotel{
+
+    }
+
     
     .text-restaurant{
     padding-top: 16px;
@@ -164,8 +180,9 @@ padding-right: 48px;
         margin-top: -65px;    
         }    
         } 
-    @media screen and (min-width: 1024px){
-        .photo-hotel{
-        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);    
-        }    
+
+
+        .photo-rest{
+            box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+            border-radius: 2px;     
         }
