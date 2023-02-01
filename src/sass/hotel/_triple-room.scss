@@ -111,13 +111,16 @@
     }
 }
 
-.hotel-photo-and-slider-two {}
+.hotel-photo-and-slider-two {
+    overflow: hidden;
+}
 
 .hotel-photo-slider-list-two {
     display: flex;
     margin-top: 32px;
-    transform: translateX(15px);
     justify-content: flex-end;
+    transform: translateX(113px);
+    
 }
 
 @media screen and (min-width: 1024px) {

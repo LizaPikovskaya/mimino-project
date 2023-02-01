@@ -169,10 +169,15 @@
     }
 }
 
+.hotel-photo-and-slider{
+    overflow: hidden;
+}
+
 .hotel-photo-slider-list {
     display: flex;
     margin-top: 32px;
-    transform: translateX(-135px);
+    overflow: hidden;
+    transform: translateX(-113px);
 }
 
 @media screen and (min-width: 1024px) {
