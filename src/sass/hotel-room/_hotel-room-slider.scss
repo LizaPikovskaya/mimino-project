@@ -350,3 +350,30 @@
             margin-bottom: 32px;
         }
     }
+.social-network-link {
+    fill: var(--accent-color);
+    transition: var(--transition-slow);
+ }
+.social-network-link:hover  {
+    fill: var(--accent-text-color);
+}
+.social-network-link:focus {
+    fill: var(--accent-text-color);
+}
+.room-prices-button {
+    transition: background-color var(--transition-fast),
+            border var(--transition-fast);
+}
+.room-prices-button:hover,
+.room-prices-button:focus {
+    background-color: var(--logo-theme-dark);
+    border: 2px solid var(--accent-color);
+}
+.hero__slider__adress {
+    transition:
+    transform var(--transition-slow);
+}
+.hero__slider__adress:hover,
+.hero__slider__adress:focus {
+    transform: scale(1.05);
+}
