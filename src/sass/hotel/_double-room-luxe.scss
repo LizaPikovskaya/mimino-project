@@ -248,14 +248,13 @@
     border: 2px solid #FFFDEE;
     border-radius: 25px;
     width: 236px;
-    height: 48px;
     padding: 0;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     display: block;
     text-align: center;
     transition: background-color var(--transition-slow),
-        border var(--transition-slow);
+    border var(--transition-slow);
 }
 
 .hotel-link:hover,
@@ -275,7 +274,6 @@
     border: 2px solid #FFFDEE;
     border-radius: 25px;
     width: 236px;
-    height: 48px;
     padding: 0;
     display: block;
     transition: background-color var(--transition-slow),
