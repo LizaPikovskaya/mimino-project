@@ -106,20 +106,9 @@ font-size: 128px;
   line-height: 1.25;
   letter-spacing: 0.01em;
   text-align: start;
-  text-decoration: none;
 color: #E5E5E5;  
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
-
-  transition: var(--transition-slow);
-}
-.hero-adress-link:hover,
-.hero-adress-link:focus {
-  border: 1px solid var(--accent-text-color);
-}
-.hero-adress-link:hover .icon-adress,
-.hero-adress-link:focus .icon-adress {
-fill: var(--accent-text-color);
 }
 @media screen and (min-width: 1024px) {
   .hero-adress-link {
@@ -133,8 +122,8 @@ gap: 10px;
 
 
 .icon-adress {
+
   fill: var(--accent-color);
-  transition: var(--transition-slow);
 }
 
 .hero-list-btn {
@@ -143,20 +132,20 @@ gap: 10px;
 
 .button {
   display: inline-block;
-  padding: 14px 24px;
+  padding: 12px 24px;
 
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.25;
   letter-spacing: 0.02em;
   color: var(--accent-color);
   background: rgba(0, 0, 0, 0.4);
   border: 2px solid var(--logo-theme-dark);
   border-radius: 50px;
 
-  transition: background-color var(--transition-slow),
-  border var(--transition-slow);
+  transition: background-color var(--transition-fast),
+  border var(--transition-fast);
 }
 
 .button:hover,
@@ -172,7 +161,7 @@ gap: 10px;
 
 .hero-social-link {
   fill: var(--accent-color);
-  transition: fill var(--transition-slow);
+  transition: fill var(--transition-fast);
 }
 
 .hero-social-link:hover,
