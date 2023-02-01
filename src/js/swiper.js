@@ -19,4 +19,12 @@ const swiper = new Swiper('.swiper', {
   // },
 });
 
-  
+  var swiper1 = new Swiper(".swiper__main", {
+      loop: true,
+      slidesPerView: 2,
+      spaceBetween: 5,
+      navigation: {
+          nextEl: '.s-button-next',
+          prevEl: '.s-button-prev',
+      },
+  });
