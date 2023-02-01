@@ -1,15 +1,16 @@
 .section-about-hotel{
     background: #FFFDEE;
+    padding-bottom: 20px;
     }
 
     @media screen and (min-width: 1024px){
         .section-about-hotel{
-            padding-bottom: 260px; 
+            padding-bottom: 20px; 
         }    
         }
         @media screen and (min-width: 1280px){
             .section-about-hotel{
-            padding-bottom: 225px;     
+            padding-bottom: 20px;     
             }    
             }
 
@@ -186,3 +187,105 @@ padding-right: 48px;
             box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
             border-radius: 2px;     
         }
+
+
+
+
+        // _____SWIPER____
+
+.about-restaurant__swiper{
+    overflow: hidden;
+    margin: 0;   
+   }
+   @media screen and (min-width: 1024px){
+    .about-restaurant__swiper{
+       margin-top: -60px;
+    }   
+   }
+   @media screen and (min-width: 1280px){
+    .about-restaurant__swiper{
+       margin-top: -110px;
+    }   
+   }
+           
+           .swiper__container_hotel {
+               width: 510px;
+   // для слайдера на левой стороне изменить на
+   // margin-right: auto;
+               margin-right: auto;
+           }
+       
+   
+           .swiper {
+               width: 100%;
+               height: 100%;
+           }
+       
+           .swiper-slide {
+               display: flex;
+               align-items: center;
+           }
+       
+           .swiper-slide img {
+               display: block;
+               width: 245px;
+               height: 245px;
+               object-fit: fill;
+           }
+       
+           .slider__arrows_hotel {
+   
+   // для слайдера на левой стороне изменить 
+   // justify-content: start;
+   
+               justify-content: start;
+               display: flex;
+               gap: 32px;
+               margin: 20px 10px;
+           
+           }
+       
+           .s-button-prev,
+           .s-button-next {
+               cursor: pointer;
+           }
+       
+           .swiper__container_hotel {
+               overflow: hidden;
+   // для слайдера на левой стороне добавить           
+   // margin-left: -105px;
+           }
+       
+           @media screen and (min-width:1024px) {
+               .swiper-slide img {
+       
+                   width: 194px;
+                   height: 194px;
+               }
+       
+               .swiper__container {
+                   width: 428px;
+                   // margin-top: -54px;
+   // для слайдера на левой стороне добавить               
+   // margin-left: 0px;
+               }
+       
+               .slider__arrows {
+                   margin: 32px 15px;
+   
+               }
+           }
+       
+           @media screen and (min-width:1280px) {
+               .swiper-slide img {
+                   width: 254px;
+                   height: 254px;
+               }
+       
+               .swiper__container {
+                   width: 548px;
+                   // margin-top: -100px;
+               }
+           }
+       
+           // _____SWIPER_END_____

@@ -1,18 +1,19 @@
 .section-about-restaurant{
     background: #FFFDEE;
+    padding-bottom: 20px;
     
     }
 
-    // @media screen and (min-width: 1024px){
-    //     .section-about-restaurant{
-    //         padding-bottom: 260px; 
-    //     }    
-    //     }
-    //     @media screen and (min-width: 1280px){
-    //         .section-about-restaurant{
-    //         padding-bottom: 225px;     
-    //         }    
-    //         }
+    @media screen and (min-width: 1024px){
+        .section-about-restaurant{
+            padding-bottom: 20px; 
+        }    
+        }
+        @media screen and (min-width: 1280px){
+            .section-about-restaurant{
+            padding-bottom: 20px;     
+            }    
+            }
     .text-restaurant{
     padding-top: 16px;
     font-family: 'Times New Roman';
@@ -208,9 +209,21 @@ margin-bottom: 24px;
 
 
         // _____SWIPER____
-        .container {
-            overflow: hidden;
-        }
+
+.about-restaurant__swiper{
+ overflow: hidden; 
+ margin: 0;  
+}
+@media screen and (min-width: 1024px){
+ .about-restaurant__swiper{
+    margin-top: -60px;
+ }   
+}
+@media screen and (min-width: 1280px){
+    .about-restaurant__swiper{
+       margin-top: -110px;
+    }   
+   }
         
         .swiper__container {
             width: 510px;
@@ -269,7 +282,7 @@ margin-bottom: 24px;
     
             .swiper__container {
                 width: 428px;
-                margin-top: -54px;
+                // margin-top: -54px;
 // для слайдера на левой стороне добавить               
 // margin-left: 0px;
             }
@@ -288,7 +301,7 @@ margin-bottom: 24px;
     
             .swiper__container {
                 width: 548px;
-                margin-top: -100px;
+                // margin-top: -100px;
             }
         }
     
