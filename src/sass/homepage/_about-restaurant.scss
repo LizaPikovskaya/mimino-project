@@ -1,19 +1,19 @@
 .section-about-restaurant{
     background: #FFFDEE;
     padding-bottom: 20px;
-    
     }
-
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: 1024px) {
         .section-about-restaurant{
-            padding-bottom: 20px; 
-        }    
-        }
-        @media screen and (min-width: 1280px){
-            .section-about-restaurant{
-            padding-bottom: 20px;     
-            }    
+            padding-bottom: 32px;
+            } 
+    }
+    @media screen and (min-width: 1280px) {
+        .section-about-restaurant{
+            padding-bottom: 50px;
+            } 
             }
+
+
     .text-restaurant{
     padding-top: 16px;
     font-family: 'Times New Roman';
@@ -224,12 +224,18 @@ margin-bottom: 24px;
        margin-top: -110px;
     }   
    }
+
+        @media screen and (min-width:1024px) {
+            .container {
+                overflow:visible;
+            }}
         
         .swiper__container {
             width: 510px;
 // для слайдера на левой стороне изменить на
 // margin-right: auto;
             margin-left: auto;
+            
         }
     
 
@@ -258,7 +264,8 @@ margin-bottom: 24px;
             justify-content: end;
             display: flex;
             gap: 32px;
-            margin: 20px 10px;
+            margin-top: 20px;
+            // margin: 20px 10px;
         
         }
     
@@ -288,7 +295,8 @@ margin-bottom: 24px;
             }
     
             .slider__arrows {
-                margin: 32px 15px;
+                margin-top: 32px;
+                // margin: 32px 15px;
 
             }
         }

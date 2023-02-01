@@ -142,7 +142,7 @@ font-size: 16px;
 line-height: 1.25;
 letter-spacing: 0.02em;
 color: var(--accent-color);
-transition: background-color 250ms var(--transition-fast), border 250ms var(--transition-fast);
+transition: background-color var(--transition-slow), border var(--transition-slow);
 }
 .details-btn:hover, .details-btn:focus, .details-link:hover, .details-link:focus{
   background-color: var(--logo-theme-dark);
