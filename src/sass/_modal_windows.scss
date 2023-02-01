@@ -5,6 +5,8 @@
     visibility: hidden;
     
     position: fixed;
+    pointer-events: none;
+   
     top: 0;
     left: 0;
     width: 100%;
@@ -138,26 +140,6 @@
    	margin-bottom: 20px;
    
 }
-@media screen and (min-width: 1024px) {
-    .room-group {
-        display: flex;
-        // justify-content: space-between;
-        justify-content: flex-end;       
-    }
-    
-    .modal-group, .modal-select {
-        width: 288px;
-        margin-right: 16px;
-        
-    }
-    .modal-group:last-child, .modal-select:last-child {
-        margin-right: 0;
-    }
-    .common-group {
-        display: flex;
-    }
-}
-
 .modal-input.select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -208,4 +190,37 @@
 .modal-button-submit:hover, .modal-button-submit:focus {
     background-color: var(--accent-color);
     color: var(--footer-background);
+}
+.disable-scroll {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+@media screen and (min-width: 1024px) {
+    .room-group {
+        display: flex;
+        // justify-content: space-between;
+        justify-content: flex-end;       
+    }
+    
+    .modal-group, .modal-select {
+        width: 288px;
+        margin-right: 16px;
+        
+    }
+    .modal-group:last-child, .modal-select:last-child {
+        margin-right: 0;
+    }
+    .common-group {
+        display: flex;
+    }
+    .modal-button-submit {
+        margin-top: 18px;
+        font-size: 24px;
+        line-height: calc(29 / 24);
+    }
 }

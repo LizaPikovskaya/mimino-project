@@ -2,270 +2,269 @@
 
 /* --------------------HERO----------------------- */
 .hero {
-
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: 'Montserrat';
-  }
-  
-  .hero .container {
-    position: relative;
-  }
-  @media screen and (min-width: 1024px) {
-    .hero {
-      padding-top: 88px;
+    padding-top: 181px;
+    padding-bottom: 20px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: 'Montserrat';
     }
-  }
-  @media screen and (min-width: 1280px) {
-    .hero {
-      padding-top: 64px;
-    }
-  }
-  
-  
-  
-  .hero-title {
-    text-align: center;
-  margin-bottom: 24px;
-  margin-left: calc(96 * 0.3);
-    font-family: 'Film P3';
-    font-weight: 700;
-    font-size: 96px;
-    line-height: 1.07;
-    letter-spacing: 0.3em;
-    color: var(--logo-theme-dark);
-  
-  }
-  @media screen and (min-width: 1024px) {
-   .hero-title {
-  margin-bottom: 16px;
-  font-size: 128px;
-  }
-  }
-  @media screen and (min-width: 1024px) {
-    .hero-title {
-   margin-bottom: 32px;
-   }
-   }
-  
-  .hero-description {
-    margin-bottom: 40px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;  
-    text-align: center;
-    color: var(--logo-theme-dark);
-  }
-  
-  @media screen and (min-width: 1024px) {
-    .hero-description {
-      margin-bottom: 56px;
-      font-size: 20px;
-   }
-   }
-   @media screen and (min-width: 1280px) {
-    .hero-description {
-      margin-bottom: 64px;
-   }
-   }
-  
-  .hero-text {
-    margin-bottom: 113px;
-    font-family: 'Times New Roman';
-    font-size: 32px;
-    text-align: center;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.05em;
-    color: var(--logo-theme-dark);
-  }
-  @media screen and (min-width: 1024px) {
-    .hero-text {
-      margin-bottom: 56px;
-      font-size: 36px;
-   }
-   }
-   @media screen and (min-width: 1280px) {
-    .hero-text {
-      margin-bottom: 64px;
-   }
-   }
-  
-  .hero-adress-link {
-    position: absolute;
-      top: -120px;
-      right: 15px;
-  
-    display: inline-flex;  
-    align-items: center;
-    gap: 8px;
-  
-    padding: 8px 6px;
-    font-weight: 400;
-    line-height: 1.25;
-    letter-spacing: 0.01em;
-    text-align: start;
-  color: #E5E5E5;  
-    border: 1px solid rgba(243, 198, 83, 0.7);
-    border-radius: 2px;
-  }
-  @media screen and (min-width: 1024px) {
-    .hero-adress-link {
-  position: static;
-  font-size: 16px;
-  padding: 8px 11px;
-  gap: 10px;
-  
-   }
-   }
-  
-  
-  .icon-adress {
-  
-    fill: var(--accent-color);
-  }
-  
-  .hero-list-btn {
-    display: flex;
-  }
-  
-  .button {
-    display: inline-block;
-    padding: 14px 24px;
-  
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-    background: rgba(0, 0, 0, 0.4);
-    border: 2px solid var(--logo-theme-dark);
-    border-radius: 50px;
-  
-    transition: background-color var(--transition-fast),
-    border var(--transition-fast);
-  }
-  
-  .button:hover,
-  .button:focus {
-    background-color: var(--logo-theme-dark);
-    border: 2px solid var(--accent-color);
-  }
-  
-  .hero-social-list {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .hero-social-link {
-    fill: var(--accent-color);
-    transition: fill var(--transition-fast);
-  }
-  
-  .hero-social-link:hover,
-  .hero-social-link:focus {
-    fill: var(--accent-text-color);
-  }
-  
-  @media screen and (max-width: 1023px) {
-    .hero {
-      padding: 180px 0 20px;
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), 
-    rgba(0, 0, 0, 0.65)),
-      url(/src/images/mobile/restoraunt/rest_page_hero_mob@1x.png);}
-  
-  
-    .hero-list-btn {
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 58px;
-      gap: 15px;
-    }  
     
-  
-  
-    .hero-adress-text {
-      font-size: 12px;
+    .hero .container {
+      position: relative;
     }
-  }
-  
-  @media (min-device-pixel-ratio: 2)  and (max-width: 1023px),
-    (-webkit-min-device-pixel-ratio: 2)  and (max-width: 1023px),
-    (min-resolution: 192dpi)  and (max-width: 1023px),
-    (min-resolution: 2dppx)  and (max-width: 1023px) {
-        .hero {
-          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), 
-    rgba(0, 0, 0, 0.65)),
-        url(/src/images/mobile/restoraunt/rest_page_hero_mob@2x.png);
+    @media screen and (min-width: 1024px) {
+      .hero {
+        padding-top: 188px;
+        padding-bottom: 15px;
       }
-  }
-  
-  @media screen and (min-width:1024px) {
-    .hero {
-      padding: 188px 0 15px;
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)),
-          url(/src/images/tab/restoran-page/rest_page_hero@1x.png);
     }
-  
-  
-    .hero-adress-text {
-      font-size: 16px;
-    }
-  
-    .hero-adress-btn-wrapper {
-      display: flex;
-      justify-content: space-between;
-      text-align: center;
-      margin-bottom: 25px;
-    }
-  
-    .hero-list-btn {
-      align-self: flex-end;
-      gap: 40px;
-    }
-  }
-  
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px),screen and (min-resolution: 192dpi) and (min-width: 1024px),screen and (min-resolution: 2dppx) and (min-width: 1024px) {
-    .hero {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)),
-        url(/src/images/tab/restoran-page/rest_page_hero@2x.png);
-    }
-  }
-  
-  @media screen and (min-width: 1280px) {
-    .hero {
-      padding: 164px 0 64px;
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)),
-        url(/src/images/desktop/restaurant-page/rest_page_hero_desk@1x.jpg);
+    @media screen and (min-width: 1280px) {
+      .hero {
+        padding-top: 164px;
+        padding-bottom: 64px;
+      }
     }
     
-  
-    .hero-social-list {
-      display: none;
-    }
-  }
-  
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
-  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px),
-  screen and (min-resolution: 192dpi) and (min-width: 1280px),
-  screen and (min-resolution: 2dppx) and (min-width: 1280px) {
-    .hero {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)),
-        url(/src/images/desktop/restaurant-page/rest_page_hero_desk@2x.jpg);
-    }
-  }
-  
-  @media screen and (max-width: 380px) {
+    
+    
     .hero-title {
-      font-size: 80px;
+      text-align: center;
+    margin-bottom: 24px;
+    margin-left: calc(96 * 0.3);
+      font-family: 'Film P3';
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 1.07;
+      letter-spacing: 0.3em;
+      color: var(--logo-theme-dark);
+    
     }
-  }
-  
-  
+    @media screen and (min-width: 1024px) {
+     .hero-title {
+    margin-bottom: 16px;
+    font-size: 128px;
+    }
+    }
+    @media screen and (min-width: 1280px) {
+      .hero-title {
+     margin-bottom: 32px;
+     }
+     }
+    
+    .hero-description {
+      margin-bottom: 40px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.2;
+      letter-spacing: 0.02em;  
+      text-align: center;
+      color: var(--logo-theme-dark);
+    }
+    
+    @media screen and (min-width: 1024px) {
+      .hero-description {
+        margin-bottom: 56px;
+        font-size: 20px;
+     }
+     }
+     @media screen and (min-width: 1280px) {
+      .hero-description {
+        margin-bottom: 64px;
+     }
+     }
+    
+    .hero-text {
+      margin-bottom: 113px;
+      font-family: 'Times New Roman';
+      font-size: 32px;
+      text-align: center;
+      font-weight: 700;
+      line-height: 1.14;
+      letter-spacing: 0.05em;
+      color: var(--logo-theme-dark);
+    }
+    @media screen and (min-width: 1024px) {
+      .hero-text {
+        margin-bottom: 137px;
+        font-size: 36px;
+     }
+     }
+    
+    
+    .hero-adress-link {
+      position: absolute;
+        top: -120px;
+        right: 15px;
+    
+      display: inline-flex;  
+      align-items: center;
+      gap: 8px;
+    
+      padding: 8px 6px;
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: 0.01em;
+      text-align: start;
+    color: #E5E5E5;  
+      border: 1px solid rgba(243, 198, 83, 0.7);
+      border-radius: 2px;
+    }
+    @media screen and (min-width: 1024px) {
+      .hero-adress-link {
+    position: static;
+    font-size: 16px;
+    padding: 8px 11px;
+    gap: 10px;
+    
+     }
+     }
+    
+    
+    .icon-adress {
+    
+      fill: var(--accent-color);
+    }
+    
+    .hero-list-btn {
+      display: flex;
+    }
+    
+    .button {
+      display: inline-block;
+      padding: 14px 24px;
+    
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      color: var(--accent-color);
+      background: rgba(0, 0, 0, 0.4);
+      border: 2px solid var(--logo-theme-dark);
+      border-radius: 50px;
+    
+      transition: background-color var(--transition-fast),
+      border var(--transition-fast);
+    }
+    
+    .button:hover,
+    .button:focus {
+      background-color: var(--logo-theme-dark);
+      border: 2px solid var(--accent-color);
+    }
+    
+    .hero-social-list {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .hero-social-link {
+      fill: var(--accent-color);
+      transition: fill var(--transition-fast);
+    }
+    
+    .hero-social-link:hover,
+    .hero-social-link:focus {
+      fill: var(--accent-text-color);
+    }
+    
+    @media screen and (max-width: 1023px) {
+      .hero {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), 
+      rgba(0, 0, 0, 0.65)),
+        url(/src/images/mobile/restoraunt/rest_page_hero_mob@1x.png);}
+    
+    
+      .hero-list-btn {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 58px;
+        gap: 15px;
+      }  
+      
+    
+      .hero-adress-text {
+        font-size: 12px;
+      }
+    }
+    
+    @media (min-device-pixel-ratio: 2)  and (max-width: 1023px),
+      (-webkit-min-device-pixel-ratio: 2)  and (max-width: 1023px),
+      (min-resolution: 192dpi)  and (max-width: 1023px),
+      (min-resolution: 2dppx)  and (max-width: 1023px) {
+          .hero {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), 
+      rgba(0, 0, 0, 0.65)),
+          url(/src/images/mobile/restoraunt/rest_page_hero_mob@2x.png);
+        }
+    }
+    
+    @media screen and (min-width:1024px) {
+      .hero {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),
+              rgba(0, 0, 0, 0.65)),
+            url(/src/images/tab/restoran-page/rest_page_hero@1x.png);
+      }
+    
+    
+      .hero-adress-text {
+        font-size: 16px;
+      }
+    
+      .hero-adress-btn-wrapper {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+    
+      .hero-list-btn {
+        align-self: flex-end;
+        gap: 40px;
+      }
+    }
+    
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px),screen and (min-resolution: 192dpi) and (min-width: 1024px),screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+      .hero {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+          url(/src/images/tab/restoran-page/rest_page_hero@2x.png);
+      }
+    }
+    
+    @media screen and (min-width: 1280px) {
+      .hero {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+          url(/src/images/desktop/restaurant-page/rest_page_hero_desk@1x.jpg);
+      }
+      .hero-adress-btn-wrapper {
+    
+        margin-bottom: 0px;
+      }
+    
+      .hero-social-list {
+        display: none;
+      }
+    }
+    
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px),
+    screen and (min-resolution: 192dpi) and (min-width: 1280px),
+    screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+      .hero {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+          url(/src/images/desktop/restaurant-page/rest_page_hero_desk@2x.jpg);
+      }
+    }
+    
+    @media screen and (max-width: 385px) {
+        .hero-title {
+            margin-left: calc(80 * 0.3);
+            font-size: 80px;
+          }
+    }
+    
+    

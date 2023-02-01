@@ -2,7 +2,8 @@
 
 /* --------------------HERO----------------------- */
 .hero {
-
+    padding-top: 181px;
+    padding-bottom: 20px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -14,15 +15,18 @@
   }
   @media screen and (min-width: 1024px) {
     .hero {
-      padding-top: 88px;
+      padding-top: 188px;
+      padding-bottom: 15px;
     }
   }
   @media screen and (min-width: 1280px) {
     .hero {
-      padding-top: 64px;
+      padding-top: 164px;
+      padding-bottom: 64px;
     }
   }
   
+    
   
   
   .hero-title {
@@ -64,7 +68,7 @@
 margin-bottom: 218px;   }
    }
   
-   @media screen and (min-width: 1024px) {
+   @media screen and (min-width: 1280px) {
     .hero-description-hotel {
 margin-bottom: 242px;   }
    }
@@ -148,7 +152,6 @@ margin-bottom: 242px;   }
   
   @media screen and (max-width: 1023px) {
     .hero {
-      padding: 180px 0 20px;
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), 
     rgba(0, 0, 0, 0.65)),
       url(/src/images/mobile/Hotel/hotel_page_mob@1x.jpg);}
@@ -181,7 +184,6 @@ margin-bottom: 242px;   }
   
   @media screen and (min-width:1024px) {
     .hero {
-      padding: 188px 0 15px;
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),
             rgba(0, 0, 0, 0.65)),
           url(/src/images/tab/hotel/hotel_page_tab@1x.jpg);
@@ -215,13 +217,14 @@ margin-bottom: 242px;   }
   
   @media screen and (min-width: 1280px) {
     .hero {
-      padding: 164px 0 64px;
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)),
         url(/src/images/desktop/hotel/hotel_page_desk@1x.jpg);
     }
     
-  
+    .hero-adress-btn-wrapper {
+        margin-bottom: 0px;
+      }
     .hero-social-list {
       display: none;
     }
@@ -238,10 +241,11 @@ margin-bottom: 242px;   }
     }
   }
   
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 385px) {
     .hero-title {
-      font-size: 80px;
-    }
+        margin-left: calc(80 * 0.3);
+        font-size: 80px;
+      }
   }
   
   

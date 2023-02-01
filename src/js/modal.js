@@ -8,7 +8,20 @@ document.addEventListener('DOMContentLoaded', function() {
    var modalButtons = document.querySelectorAll('.js-open-modal'),
        overlay      = document.querySelector('.js-overlay-modal'),
        closeButtons = document.querySelectorAll('.js-modal-close');
-
+       
+      let disableScroll = function () {
+         let pagePosition = window.scrollY;
+         document.body.classList.add('disable-scroll');
+         document.body.dataset.position = pagePosition;
+         document.body.style.top = -pagePosition + 'px';
+      }
+      let enableScroll = function () {
+         let pagePosition = parseInt(document.body.dataset.position, 10);
+         document.body.style.top = 'auto';
+         document.body.classList.remove('disable-scroll');
+         window.scroll({ top: pagePosition, left: 0 });
+         document.body.removeAttribute('data-position');
+      }
 
    /* Перебираем массив кнопок */
    modalButtons.forEach(function(item){
@@ -31,11 +44,19 @@ document.addEventListener('DOMContentLoaded', function() {
             подложке и окну чтобы показать их. */
          modalElem.classList.add('active');
          overlay.classList.add('active');
+         
       }); // end click
-
+      
+     
+      
+      item.addEventListener('click', (e) => {
+         disableScroll();
+         
+      });
+      
    }); // end foreach
 
-
+   
    closeButtons.forEach(function(item){
 
       item.addEventListener('click', function(e) {
@@ -44,7 +65,11 @@ document.addEventListener('DOMContentLoaded', function() {
          parentModal.classList.remove('active');
          overlay.classList.remove('active');
       });
-
+    
+      item.addEventListener('click', (e) => {
+         enableScroll();
+               
+      });
    }); // end foreach
 
 
@@ -55,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             document.querySelector('.modal.active').classList.remove('active');
             document.querySelector('.overlay').classList.remove('active');
+            
         };
     }, false);
 
@@ -65,6 +91,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
-
+    
 
 }); // end ready

@@ -6,7 +6,7 @@ const swiper = new Swiper('.swiper', {
   // pagination: {
   //   el: '.swiper-pagination',
   // },
-
+  
   // Navigation arrows
   navigation: {
     nextEl: '.s-button-next',
@@ -18,3 +18,5 @@ const swiper = new Swiper('.swiper', {
   //   el: '.swiper-scrollbar',
   // },
 });
+
+  
