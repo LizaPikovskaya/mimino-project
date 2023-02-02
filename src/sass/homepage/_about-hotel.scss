@@ -248,6 +248,7 @@ padding-right: 48px;
            .s-button-prev-1,
            .s-button-next-1{
                cursor: pointer;
+               transition: hover var(--transition-fast);
            }
         .s-button-prev-1:hover {
             fill: var(--accent-text-color);
@@ -255,6 +256,7 @@ padding-right: 48px;
         .s-button-next-1:hover {
             fill: var(--accent-text-color);
         }
+
        
            .swiper__container_hotel {
                overflow: hidden;

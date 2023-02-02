@@ -1,4 +1,38 @@
 /* --------------------HERO----------------------- */
+@keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+            transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes textFromBotton {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 .hero {
   padding-top: 181px;
   padding-bottom: 20px;
@@ -25,6 +59,7 @@
 }
 
 .hero-title {
+  animation: focus-in-expand-fwd 800ms ease-out;
   text-align: center;
   margin-bottom: 24px;
   margin-left: calc(96 * 0.3);
@@ -48,6 +83,7 @@
 }
 
 .hero-description {
+  animation: focus-in-expand-fwd 800ms ease-out;
   margin-bottom: 40px;
   font-weight: 600;
   font-size: 16px;
@@ -70,6 +106,8 @@
 }
 
 .hero-text {
+  animation: textFromBotton 800ms linear 900ms  both;
+  transform: translateY(100px);
   margin-bottom: 113px;
   font-family: 'Times New Roman';
   font-size: 32px;
@@ -88,7 +126,7 @@
 
 .hero-adress-link {
   position: absolute;
-  top: -120px;
+  top: -110px;
   right: 15px;
 
   display: inline-flex;

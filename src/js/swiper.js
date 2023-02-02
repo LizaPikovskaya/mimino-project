@@ -6,6 +6,7 @@ var swiper = new Swiper('.js-swiper-hotel-room', {
   delay: 2000,
   disableOnInteraction: true,
   },
+
   navigation: {
     nextEl: '.s-button-next',
     prevEl: '.s-button-prev',
@@ -84,3 +85,4 @@ var swiper3 = new Swiper(".swiper__main_3", {
     prevEl: '.s-button-prev-about-hotel',
   },
 });
+
