@@ -87,14 +87,6 @@
                 rgba(0, 0, 0, 0));
     }
 
-    // ______HERO______
-    // .hero__container {
-    //     z-index: 2;
-    //     position: absolute;
-    //     top: 0;
-
-    //     justify-content: center;
-    // }
 
     .room-title {
         font-family: 'Times New Roman';
@@ -106,14 +98,6 @@
         color: var(--logo-theme-dark);
     }
 
-    // @media screen and (min-width: 1024px) {
-    //     .room-title {
-    //         min-width: 510px;
-    //         font-size: 36px;
-    //         line-height: 41px;
-
-    //     }
-    // }
 
     .room-text {
         max-width: 325px;
@@ -130,17 +114,7 @@
 
     }
 
-    // .room-list-button {
-    //     display: flex;
 
-    // }
-
-    // .button-container {
-    //     justify-content: center;
-    //     align-items: center;
-    //     display: flex;
-    //     width: 100%;
-    // }
 
     .room-social-network-list {
         margin-right: 70px;
@@ -171,15 +145,7 @@
         }
     }
 
-    // @media screen and (min-width: 1024px) {
-    //     .room-social-network-list {
-    //         display: flex;
-    //         gap: 21px;
-    //         margin-left: 372px;
-    //         margin-bottom: 38px;
-    //         margin-top: 42px;
-    //     }
-    // }
+
 
     button.room-prices-button {
         box-sizing: border-box;
@@ -201,25 +167,7 @@
 
     }
 
-    // @media screen and (min-width: 1024px) {
-    //     button.room-prices-button {
-    //         position: absolute;
-    //         top: 608px;
-    //         left: 745px;
 
-    //     }
-    // }
-
-    // .room-location-container {
-    //     display: flex;
-    //     justify-content: end;
-    // }
-
-    // @media screen and (min-width: 1024px) {
-    //     .room-location-container {
-    //         justify-content: flex-start;
-    //     }
-    // }
 
     .room-location {
 
@@ -239,11 +187,6 @@
 
     }
 
-    // @media screen and (min-width: 1024px) {
-    //     .room-location {
-    //         top: 640px;
-    //     }
-    // }
 
     .address__map {
 
@@ -256,10 +199,7 @@
         ;
     }
 
-    // .room-logo-location {
-    //     margin-right: 8px;
-    // }
-
+ 
     .info__wrapper {
         z-index: 2;
         position: absolute;
