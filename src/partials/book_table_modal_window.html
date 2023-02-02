@@ -31,15 +31,16 @@
                     <label class="modal-label" for="room_type">Столик на яку кількість осіб?</label>
                 </div>
                 <div class="modal-select">
-                    <select class="modal-input select" name="checkin_data" id="checkin_data">
+                    <input class="modal-input data-select" type="date" name="table_data" required id="table_data" min="2023-01-01" max="2030-01-01"/>
+                    <!-- <select class="modal-input select" name="checkin_data" id="checkin_data">
                         <option value="0" selected>Сьогодні</option>
                         <option value="1">Завтра</option>
                         <option value="2">Післязавтра</option>               
-                    </select>
+                    </select> -->
                     <!-- <svg class="select_arrow" width="24" height="24">
                         <use class="arrow" href="./images/svg/sprite.svg#icon-select-check"></use>
                     </svg> -->
-                    <label class="modal-label" for="checkin_data">На яку дату бронювати?</label>
+                    <label class="modal-label" for="table_data">На яку дату бронювати?</label>
                 </div>
             </div>
         </div>

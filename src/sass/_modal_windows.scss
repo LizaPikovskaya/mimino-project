@@ -162,9 +162,16 @@
     -moz-appearance: none;
     appearance: none;
     z-index: 1;
-  
+     
   }
-  .modal-select::after {
+  .modal-input.data-select::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    z-index: 2;
+    // width: 30%;
+    color: transparent;
+    margin-right: 0;
+  }
+  .modal-select::after, .modal-input.data-select::after {
     content: "";
     position: absolute;
     top: 16px;
