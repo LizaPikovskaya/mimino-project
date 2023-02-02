@@ -3,9 +3,9 @@
     /* Скрываем подложку  */
     opacity: 0;
     visibility: hidden;
-    
-    position: fixed;
     pointer-events: none;
+    position: fixed;
+    
    
     top: 0;
     left: 0;
@@ -13,11 +13,12 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.65);
     z-index: 101;
-    transition: opacity var(--transition-slow), visibility var(--transition-slow);
+    transition: opacity var(--transition-fast);
  }
 //  .modal.hidden {
 //     display: none;
 //  }
+
  .modal {
    
     /* Скрываем окна  */
@@ -34,16 +35,21 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.2);
+    transform: translate(-50%, -50%);
     z-index: 102; /* Должен быть выше чем у подложки*/
     
     /*  Побочные стили   */
     padding: 60px 15px;
     border-radius: 2px;
     background-color: var(--background-lighter);
-    transition: opacity var(--transition-slow), visibility var(--transition-slow), transform var(--transition-slow);
+    transition: opacity var(--transition-fast);
     overflow: auto;
     // outline: 2px solid red;
+ }
+ @media screen and (max-width: 434px) {
+    .modal {
+    max-width: calc(100% - 20px);
+    }
  }
  @media screen and (min-width: 1024px) {
     .modal {
@@ -54,15 +60,12 @@
  /* Стили для активных классов подложки и окна */
 
 
- .overlay.active {
-    opacity: 1;
-    visibility: visible; 
- }
+ .overlay.active,
  .modal.active {
     opacity: 1;
     visibility: visible;
-    transform: translate(-50%, -50%) scale(1);
 }
+
 
 /* Стили для кнопки закрытия */
 .modal__cross {
@@ -125,8 +128,12 @@
 
     color: #808080;
     background-color: transparent;
+    transition: border var(--transition-fast);
 }
-
+.modal-input:focus, .modal-input:hover  {
+    outline: transparent;
+    border: 1px solid var(--accent-color);
+}
 .modal-label {
     margin-left: 8px;
     font-weight: 500;
@@ -203,6 +210,8 @@
 	left: 0;
 	top: 0;
 	width: 100%;
+   
+    z-index: 1;
 }
 @media screen and (min-width: 1024px) {
     .room-group {
