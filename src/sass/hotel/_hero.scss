@@ -1,4 +1,42 @@
 /* --------------------HERO----------------------- */
+
+ @keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+ @keyframes swing-in-top-fwd {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+            transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 1;
+  }
+}
+
+
+
 .hero {
   padding-top: 181px;
   padding-bottom: 20px;
@@ -25,6 +63,7 @@
 }
 
 .hero-title {
+  animation: swing-in-top-fwd 1000ms ;
   text-align: center;
   margin-bottom: 24px;
   margin-left: calc(96 * 0.3);
@@ -48,6 +87,7 @@
 }
 
 .hero-description-hotel {
+  animation: puff-in-center 1000ms linear 500ms both;
   margin-bottom: 178px;
   font-weight: 600;
   font-size: 20px;

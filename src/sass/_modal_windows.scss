@@ -13,7 +13,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.65);
     z-index: 101;
-    transition: opacity var(--transition-fast);
+    transition: opacity var(--transition-slow), visibility var(--transition-slow);
  }
 //  .modal.hidden {
 //     display: none;
@@ -35,14 +35,14 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0);
     z-index: 102; /* Должен быть выше чем у подложки*/
     
     /*  Побочные стили   */
     padding: 60px 15px;
     border-radius: 2px;
     background-color: var(--background-lighter);
-    transition: opacity var(--transition-fast);
+    transition: opacity var(--transition-slow), visibility var(--transition-slow), transform 600ms ease-out;
     overflow: auto;
     // outline: 2px solid red;
  }
@@ -60,10 +60,14 @@
  /* Стили для активных классов подложки и окна */
 
 
- .overlay.active,
+ .overlay.active {
+    opacity: 1;
+    visibility: visible;
+ }
  .modal.active {
     opacity: 1;
     visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
 }
 
 
@@ -77,12 +81,14 @@
     stroke: var(--footer-background);
     stroke-width: 2px;
     cursor: pointer;
-    transition: stroke var(--transition-fast),  stroke-width var(--transition-fast);
+    box-shadow: 0 0 0;
+    transition: stroke var(--transition-fast),  stroke-width var(--transition-fast), box-shadow var(--transition-fast);
     
  }
  .modal__cross:hover, .modal__cross:focus {
-    stroke: var(--accent-text-color);
-    stroke-width: 5px;
+    // stroke: var(--accent-text-color);
+    // stroke-width: 3px;
+    box-shadow: 0 0px 4px black;
     }
 // Стили для заголовка окна
  .modal__title {

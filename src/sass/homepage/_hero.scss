@@ -129,11 +129,7 @@
 }
 
 .hero-text {
-  animation-name: textFromBotton;
-  animation-duration: 800ms;
-  animation-timing-function: linear;
-  animation-fill-mode: both;
-  animation-delay: 900ms;
+  animation: textFromBotton 800ms linear 900ms  both;
   transform: translateY(100px);
   margin-bottom: 113px;
   font-family: 'Times New Roman';
