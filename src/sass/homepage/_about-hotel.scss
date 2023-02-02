@@ -245,10 +245,16 @@ padding-right: 48px;
            
            }
        
-           .s-button-prev,
-           .s-button-next {
+           .s-button-prev-1,
+           .s-button-next-1{
                cursor: pointer;
            }
+        .s-button-prev-1:hover {
+            fill: var(--accent-text-color);
+        }
+        .s-button-next-1:hover {
+            fill: var(--accent-text-color);
+        }
        
            .swiper__container_hotel {
                overflow: hidden;
@@ -257,6 +263,9 @@ padding-right: 48px;
            }
        
            @media screen and (min-width:1024px) {
+.swiper__container_hotel {
+    width: 428px;
+}
                .swiper-slide img {
        
                    width: 194px;
@@ -277,6 +286,8 @@ padding-right: 48px;
            }
        
            @media screen and (min-width:1280px) {
+            .swiper__container_hotel {
+                    width: 548px;}
                .swiper-slide img {
                    width: 254px;
                    height: 254px;

@@ -269,11 +269,17 @@ margin-bottom: 24px;
         
         }
     
-        .s-button-prev,
-        .s-button-next {
-            cursor: pointer;
+        .s-button-prev-about-rest,
+        .s-button-next-about-rest {
+        cursor: pointer;
+        transition: fill var(--transition-fast);
         }
-    
+        .s-button-prev-about-rest:hover {
+            fill: var(--accent-text-color);
+        }
+        .s-button-next-about-rest:hover {
+            fill: var(--accent-text-color);
+        }
         .swiper__container {
             overflow: hidden;
 // для слайдера на левой стороне добавить           
@@ -289,6 +295,7 @@ margin-bottom: 24px;
     
             .swiper__container {
                 width: 428px;
+                transform: translateX(20px);
                 // margin-top: -54px;
 // для слайдера на левой стороне добавить               
 // margin-left: 0px;
