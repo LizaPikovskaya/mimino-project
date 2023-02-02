@@ -30,8 +30,8 @@ padding-bottom: 20px;
 
 .hero-title {
   text-align: center;
-margin-bottom: 24px;
-margin-left: calc(96 * 0.3);
+  margin-bottom: 24px;
+  margin-left: calc(96 * 0.3);
   font-family: 'Film P3';
   font-weight: 700;
   font-size: 96px;
@@ -41,16 +41,16 @@ margin-left: calc(96 * 0.3);
 
 }
 @media screen and (min-width: 1024px) {
- .hero-title {
-margin-bottom: 16px;
-font-size: 128px;
+.hero-title {
+  margin-bottom: 16px;
+  font-size: 128px;
 }
 }
 @media screen and (min-width: 1280px) {
   .hero-title {
- margin-bottom: 32px;
- }
- }
+  margin-bottom: 32px;
+}
+}
 
 .hero-description {
   margin-bottom: 40px;
@@ -66,13 +66,13 @@ font-size: 128px;
   .hero-description {
     margin-bottom: 56px;
     font-size: 20px;
- }
- }
- @media screen and (min-width: 1280px) {
+}
+}
+@media screen and (min-width: 1280px) {
   .hero-description {
     margin-bottom: 64px;
- }
- }
+}
+}
 
 .hero-text {
   margin-bottom: 113px;
@@ -88,9 +88,8 @@ font-size: 128px;
   .hero-text {
     margin-bottom: 137px;
     font-size: 36px;
- }
- }
-
+}
+}
 
 .hero-adress-link {
   position: absolute;
@@ -116,10 +115,8 @@ position: static;
 font-size: 16px;
 padding: 8px 11px;
 gap: 10px;
-
- }
- }
-
+}
+}
 
 .icon-adress {
 
@@ -241,7 +238,6 @@ gap: 10px;
       url(/src/images/desktop/main-page/main_hero_desk@1x\ 12.53.13.jpg);
   }
   .hero-adress-btn-wrapper {
-
     margin-bottom: 0px;
   }
 
@@ -264,6 +260,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
 @media screen and (max-width: 380px) {
   .hero-title {
     font-size: 80px;
+    margin-left: calc(60 * 0.3);
   }
 }
 
