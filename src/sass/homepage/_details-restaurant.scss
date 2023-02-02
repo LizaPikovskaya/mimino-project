@@ -155,6 +155,7 @@ border: 2px solid var(--accent-color);
     padding-top: 12px;
     text-align: center;
 }
+
 .swiper{
   margin-bottom: 80px !important;
   position: static !important;
@@ -195,3 +196,12 @@ display: none;
 .swiper-button-prev:hover, .swiper-button-prev:focus{
   background-image: url(../images/svg/arrow-left-accent.svg);
 }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background-position: center;
+
+    }

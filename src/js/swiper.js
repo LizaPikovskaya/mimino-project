@@ -65,8 +65,8 @@ var swiper2 = new Swiper(".swiper__main_2", {
     },
     1024: {
       slidesPerView: 3,
-      spaceBetween: 10,
     },
+
   },
 });
 
