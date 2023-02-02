@@ -6,7 +6,10 @@ const swiper = new Swiper('.swiper', {
   // pagination: {
   //   el: '.swiper-pagination',
   // },
-  
+          autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
   // Navigation arrows
   navigation: {
     nextEl: '.s-button-next',
@@ -26,5 +29,9 @@ const swiper = new Swiper('.swiper', {
       navigation: {
           nextEl: '.s-button-next',
           prevEl: '.s-button-prev',
-      },
+    },
+        autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
   });

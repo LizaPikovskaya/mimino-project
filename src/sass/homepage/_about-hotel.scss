@@ -248,7 +248,14 @@ padding-right: 48px;
            .s-button-prev,
            .s-button-next {
                cursor: pointer;
+               transition: hover var(--transition-fast);
            }
+.s-button-prev:hover {
+    fill: #C79002;
+}
+.s-button-next:hover {
+    fill: #C79002;
+}
        
            .swiper__container_hotel {
                overflow: hidden;
