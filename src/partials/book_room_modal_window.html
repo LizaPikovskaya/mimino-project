@@ -31,22 +31,24 @@
         </div>
         <div class="room-group">
             <div class="modal-select">
-                <select class="modal-input select" name="checkin_data" id="checkin_data">
+                <input class="modal-input data-select" type="date" name="checkin_data" required id="checkin_data" min="2023-01-01" max="2030-01-01"/>
+                <!-- <select class="modal-input select" name="checkin_data" id="checkin_data">
                     <option value="0" selected>Сьогодні</option>
                     <option value="1">Завтра</option>
                     <option value="2">Післязавтра</option>               
-                </select>
+                </select> -->
                 <!-- <svg class="select_arrow" width="24" height="24">
                     <use class="arrow" href="./images/svg/sprite.svg#icon-select-check"></use>
                 </svg> -->
                 <label class="modal-label" for="checkin_data">Дата заїзду</label>
             </div>
             <div class="modal-select">
-                <select class="modal-input select" name="checkout_data" id="checkout_data">
+                <input class="modal-input data-select" type="date" name="checkout_data" required id="checkout_data" min="2023-01-01" max="2030-01-01"/>
+                <!-- <select class="modal-input select" name="checkout_data" id="checkout_data">
                     <option value="0" selected>Сьогодні</option>
                     <option value="1">Завтра</option>
                     <option value="2">Післязавтра</option>               
-                </select>
+                </select> -->
                 <!-- <svg class="select_arrow" width="24" height="24">
                     <use class="arrow" href="./images/svg/sprite.svg#icon-select-check"></use>
                 </svg> -->
