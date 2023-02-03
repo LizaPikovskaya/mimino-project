@@ -1,4 +1,4 @@
-header {
+.header {
     z-index: 100;
     position: fixed;
     top: 0;
@@ -21,7 +21,7 @@ header {
 }
    
 @media screen and (min-width: 1024px){
-    header {
+    .header {
         padding-top: 30px;
         padding-bottom: 30px;
     }
@@ -38,10 +38,21 @@ header {
     //     rgba(0, 0, 0, 0));
 
 
-.header__container {
+.header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+@media screen and (max-width: 360px) {
+    .header__logo {
+        font-size: 32px;
+    }
+    .header__nav-link {
+        font-size: 14px;
+    }
+    .header__nav-list {
+        gap: 10px;
+    }
 }
 
 .header__logo {
@@ -53,14 +64,13 @@ header {
     letter-spacing: 0.3em;
     text-decoration: none;
     color: var(--logo-theme-dark);
-    transition: var(--transition-slow)
+    transition: color var(--transition-fast);
 }
-.header__logo:hover {
-    transform: scale(1.2);
-}
+.header__logo:hover,
 .header__logo:focus {
-    transform: scale(1.2);
+color: var(--accent-color)
 }
+
 
 
 .header__nav-list {
@@ -77,11 +87,11 @@ header {
     letter-spacing: 0.02em;
     color: var(--accent-color);
     align-self: center;
-    transition: var(--transition-slow)
+    transition: var(--transition-fast)
 }
 .header__tel-icon {
     fill: var(--accent-color);
-    transition: var(--transition-slow)
+    transition: var(--transition-fast)
 }
 
 
@@ -106,13 +116,13 @@ header {
     display: flex;
     line-height: 0;
     color: var(--logo-theme-dark);
-    transition: var(--transition-slow);
+    transition: var(--transition-fast);
 }
 
 .header__tel-number {
     display: none;
     align-self: center;
-    transition: var(--transition-slow);
+    transition: var(--transition-fast);
 }
 
 @media screen and (min-width:1024px) {
