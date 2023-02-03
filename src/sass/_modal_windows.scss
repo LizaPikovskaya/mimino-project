@@ -171,7 +171,7 @@
     color: transparent;
     margin-right: 0;
   }
-  .modal-select::after, .modal-input.data-select::after {
+  .modal-select::after {
     content: "";
     position: absolute;
     top: 16px;
