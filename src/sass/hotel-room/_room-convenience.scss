@@ -95,7 +95,7 @@
     box-sizing: border-box;
     
     max-width: 384px;
-    min-height: 64px;
+    height: 64px;
     
     background: #000000;
    
@@ -138,6 +138,14 @@
   @media screen and (min-width: 1280px) {
     .room-booking-button {
       margin-right: 151px;
+    }
+  }
+
+  @media screen and (max-width: 413px) {
+    .room-booking-button {
+      font-size: 15px;
+      padding: 15px 25px;
+      height: 54px;
     }
   }
 
